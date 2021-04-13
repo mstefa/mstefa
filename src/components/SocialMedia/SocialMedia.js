@@ -1,16 +1,18 @@
 import React from 'react'
-import {StyledSocialMedia} from './StyledSocialMedia'
+import { StyledSocialMedia } from './StyledSocialMedia'
 
 export default function NavBar() {
   return (
     <StyledSocialMedia>
-      
+
       <ul>
-        <li> <i class="fab fa-github"></i> </li>
-        <li> <i class="fab fa-linkedin-in"></i> </li>
-        <li> <i class="fab fa-twitter"></i> </li>
-      </ul>      
-      
+        <li> <a href='https://www.linkedin.com/in/matiasstefanutti/'  target="blank" > <i class="fab fa-linkedin-in"> </i> </a>  </li>
+        <li> <a href='https://github.com/mstefa'  target="blank" > <i class="fab fa-github"></i> </a>  </li>
+        <li> <a href='https://twitter.com/mstefanutti'  target="blank" > <i class="fab fa-twitter"></i> </a> </li>
+        <li> <div class="line"></div> </li>
+        {/* <i className="fas fa-shoe-prints"></i> */}
+      </ul>
+
     </StyledSocialMedia>
   )
 }

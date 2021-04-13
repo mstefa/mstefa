@@ -14,9 +14,11 @@ export const StyledNav = styled.nav`
     /* justify-content:space-between; */
     /* max-width: 28rem; */
     /* background-color:red; */
+    padding: 0;
+    list-style-type: none;
 
     li{
-      list-style-type: none;
+      /* list-style-type: none; */
       margin-right: 2rem;
     }
   }

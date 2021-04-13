@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
 export const StyledHome = styled.div`
-  background-color: blue;
+  min-height: 25rem;
+  display:flex;
+  flex-direction:column;
+  background-color: gray;
 `
