@@ -12,7 +12,7 @@ export default function NavBar() {
         <li> Home </li>
         <li> <a href='#about'>About me</a> </li>
         <li> <a href='#projects'>Work</a> </li>
-        <li> Contact </li>
+        <li> <a href='#contact'>Contact</a></li>
       </ul>      
   
     </StyledNav>

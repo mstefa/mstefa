@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import { lightGray } from "../../GlobalStyles";
+import { maxWidth } from "../../GlobalStyles";
 
-export const StyledProjects = styled.div`
-  /* max-width: 90vw; */
+export const StyledProjects = styled.section`
+  /* max-width: ${maxWidth}rem; */
   min-height: 70vh;
-  margin: 0 0 0 10vw;
+  margin: 0 auto;
   display:flex;
   flex-direction:column;
-  color: ${lightGray};
-  /* background-color: gray; */
+  background-color: gray;
 `

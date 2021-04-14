@@ -1,13 +1,11 @@
 import styled from 'styled-components'
-import { lightGray } from "../../GlobalStyles";
+import { maxWidth } from "../../GlobalStyles";
 
-export const StyledAbout = styled.div`
-  margin: 0 auto;
-  width: 60rem;
+export const StyledAbout = styled.section`
+  /* max-width: ${maxWidth}rem; */
+  /* margin: 0 auto; */
   min-height: 25rem;
   text-align: left;
-  color: ${lightGray};
-  /* display:flex; */
   /* background-color: red; */
 
   div{
@@ -16,15 +14,14 @@ export const StyledAbout = styled.div`
     
 
     .textContainer{
-      max-width: 30rem;
-      margin: 0 2rem 0 1rem;
+      max-width: 35vw;
+      margin: 0 4rem 0 4rem;
+      background-color:red;
       display:flex;
       flex-direction:column;
 
       ul {
         columns: 3;
-        /* -webkit-columns: 2;
-        -moz-columns: 2; */
         li {
           list-style-type: '👉';
           padding-inline-start: 0.4rem;
@@ -34,11 +31,11 @@ export const StyledAbout = styled.div`
     }
     
     .imgContainer{
-      width: 25rem;
+      width: 25vw;
 
       img{
-        width: 20rem;
-        height:18rem;
+        width: 25vw;
+        height:22vw;
       }
     }
   

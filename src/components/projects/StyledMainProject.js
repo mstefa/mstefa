@@ -11,20 +11,20 @@ export const StyledMainProject = styled.div`
     /* width: 25rem; */
 
     img{
-      width: 30rem;
+      width: 40vw;
     }
   }
 
   .text-container{
     position: absolute;
     top: 0rem;
-    left:25rem;
-    max-width: 30rem;
+    left:35vw;
+    max-width: 40vw;
     text-align:right;
     
 
     h3{
-      margin-left: 17rem;
+      margin-left: 22vw;
       padding-bottom: 0.5rem;
       color: ${lightGray};
       border-bottom: 0.1rem solid ${lightTel};
