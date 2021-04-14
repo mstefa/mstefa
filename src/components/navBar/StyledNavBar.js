@@ -1,9 +1,12 @@
 import styled from 'styled-components';
+import { lightGray } from "../../GlobalStyles";
 
 export const StyledNav = styled.nav`
-  background-color: gray;
+  /* background-color: gray; */
   display: flex;
   justify-content: space-between;
+  scroll-behavior: smooth; 
+  color: ${lightGray};
 
   img{
     margin: 0.5rem 0 0.5rem 2rem;

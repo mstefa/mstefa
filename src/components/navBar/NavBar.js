@@ -10,7 +10,7 @@ export default function NavBar() {
 
       <ul>
         <li> Home </li>
-        <li> About me </li>
+        <li> <a href='#about'>About me</a> </li>
         <li> Work </li>
         <li> Contact </li>
       </ul>      

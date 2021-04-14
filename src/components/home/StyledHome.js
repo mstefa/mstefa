@@ -1,8 +1,12 @@
 import styled from 'styled-components'
+import { lightGray } from "../../GlobalStyles";
 
 export const StyledHome = styled.div`
-  min-height: 25rem;
+  /* max-width: 90vw; */
+  min-height: 70vh;
+  margin: 0 0 0 10vw;
   display:flex;
   flex-direction:column;
-  background-color: gray;
+  color: ${lightGray};
+  /* background-color: gray; */
 `
