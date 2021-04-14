@@ -10,6 +10,7 @@ export var darkGreen = "#41CF17";
 export var lightGray ="#F2F2F2"
 export var mediumGray ="#D9D9D9"
 export var darkGray ="#262626"
+// export var opacityBackground = "#CF474080";
 
 
 export const GlobalStyles = createGlobalStyle`

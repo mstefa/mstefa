@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "id": 2,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "https://github.com/mstefa/MoviesApp",
+      "page": "https://www.linkedin.com/feed/",
+      "main": true,
+      "show": true
+    },
+    {
+      "id": 3,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "https://github.com/mstefa/MoviesApp",
+      "page": "https://www.linkedin.com/feed/",
+      "main": true,
+      "show": true
+    },
+    {
+      "id": 4,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "https://github.com/mstefa/MoviesApp",
+      "page": "https://www.linkedin.com/feed/",
+      "main": false,
+      "show": true
+    },
+    {
+      "id": 5,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "https://github.com/mstefa/MoviesApp",
+      "page": "https://www.linkedin.com/feed/",
+      "main": true,
+      "show": false
+    },
+    {
+      "id": 6,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "",
+      "page": "https://www.linkedin.com/feed/",
+      "main": false,
+      "show": false
+    },
+    {
+      "id": 7,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "",
+      "page": "https://www.linkedin.com/feed/",
+      "main": true,
+      "show": true
+    },
+    {
+      "id": 8,
+      "name": "movieApp",
+      "description": "small project that permit to find all movies saved on the OMDb API and save your favorite ones ",
+      "technologies": ["React", "Redux", "React-Router", "CSSModules"],
+      "img": "/images/movie.gif",
+      "repository": "https://github.com/mstefa/MoviesApp",
+      "page": "",
+      "main": true,
+      "show": true
+    }
+  ]
+}
