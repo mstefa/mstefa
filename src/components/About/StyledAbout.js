@@ -31,8 +31,13 @@ export const StyledAbout = styled.section`
       ul {
         columns: 3;
         li {
-          list-style-type: '👉';
-          padding-inline-start: 0.4rem;
+          /* list-style-type: '👉'; */
+          list-style: none;
+          /* padding-inline-start: 0.4rem; */
+        }
+        li::before {
+          content: '> ';
+          color:${lightTel};
         }
       }
 
@@ -63,6 +68,11 @@ export const StyledAbout = styled.section`
       .textContainer{
         /* flex-basis: 60%; */
         max-width: 100%;
+        margin: 0 0.5rem 0 0.5rem;
+
+        ul {
+        columns: 2;
+        }
       }
     }
     

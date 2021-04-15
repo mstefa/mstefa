@@ -46,7 +46,6 @@ export const StyledMainProject = styled.div`
         li::before {
           content: '> ';
           color:${lightTel};
-          /* margin: 0 0.1rem ; */
         }
       }
 
@@ -59,6 +58,8 @@ export const StyledMainProject = styled.div`
 
   @media (max-width: 850px) {
     
+    margin: 1rem;
+
     position: static;
 
     h3{

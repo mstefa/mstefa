@@ -21,17 +21,18 @@ export default function About() {
           </p>
           <p>
             As a full-stack developer, I care about producing software that is both, durable and useful. 
-            Here are a few technologies I've been working with recently:
+            Here are a few technologies I've been working with:
           </p>
 
             <ul>
             <li>JavaScript</li>
-            <li>typeScipt</li>
-            <li>Node.js</li>
+            <li>TypeScipt</li>
             <li>Node.js</li>
             <li>React.js</li>
             <li>Redux</li>
             <li>Express</li>
+            <li>Sequelize</li>
+            <li>GraphQl</li>
           </ul>
         </div>
         <div className='imgContainer'>

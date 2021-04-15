@@ -12,17 +12,15 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <NavBar></NavBar>
-      <SocialMedia></SocialMedia>
-      <Home></Home>
-      <About></About>
-      <Projects></Projects>
-      <Contact></Contact>
-      
+      <NavBar/>
+      <SocialMedia/>
+      <Home/>
+      <About/>
+      <Projects/>
+      <Contact/>    
       <footer>
         Designed & Built by Matías Stefanutti
       </footer>
-      
     </div>
   );
 }

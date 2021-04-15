@@ -1,15 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export var mainRed = "#820801";
-export var darkRed= "#4F0501";
+export var darkRed = "#4F0501";
 export var lightRed = "#CF4740";
 export var lightTel = "#17CFC5";
 export var darkTel = "#08827B";
 export var lightGreen = "#41CF17";
 export var darkGreen = "#41CF17";
-export var lightGray ="#F2F2F2"
-export var mediumGray ="#888888"
-export var darkGray ="#262626"
+export var lightGray = "#F2F2F2"
+export var mediumGray = "#888888"
+export var darkGray = "#262626"
 export var maxWidth = 65;
 // export var opacityBackground = "#CF474080";
 
@@ -29,6 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: ${darkRed};
   color: ${lightGray};
+  counter-reset: section; 
   a{
     text-decoration: none;
     color: ${lightGray};
@@ -43,6 +44,17 @@ code {
 section{
   width:80vw;
   margin : 1rem 10vw 0rem 10vw ;
+}
+
+h2{
+  ::before {
+    counter-increment: section;
+    content: counter(section) '.';
+    color:${lightTel};
+    font-size: 1rem;
+    font-weight:lighter;
+    padding-right: 0.6rem;
+  }
 }
 
 footer{
