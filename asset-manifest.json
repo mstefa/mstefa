@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/mstefa/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/mstefa/static/js/main.a2f61609.chunk.js",
-    "main.js.map": "/mstefa/static/js/main.a2f61609.chunk.js.map",
+    "main.js": "/mstefa/static/js/main.86a016d4.chunk.js",
+    "main.js.map": "/mstefa/static/js/main.86a016d4.chunk.js.map",
     "runtime-main.js": "/mstefa/static/js/runtime-main.5b59c28e.js",
     "runtime-main.js.map": "/mstefa/static/js/runtime-main.5b59c28e.js.map",
-    "static/js/2.f248169d.chunk.js": "/mstefa/static/js/2.f248169d.chunk.js",
-    "static/js/2.f248169d.chunk.js.map": "/mstefa/static/js/2.f248169d.chunk.js.map",
+    "static/js/2.05ff2d9c.chunk.js": "/mstefa/static/js/2.05ff2d9c.chunk.js",
+    "static/js/2.05ff2d9c.chunk.js.map": "/mstefa/static/js/2.05ff2d9c.chunk.js.map",
     "index.html": "/mstefa/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/mstefa/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.f248169d.chunk.js.LICENSE.txt": "/mstefa/static/js/2.f248169d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/mstefa/static/media/logo.6ce24c58.svg"
+    "static/js/2.05ff2d9c.chunk.js.LICENSE.txt": "/mstefa/static/js/2.05ff2d9c.chunk.js.LICENSE.txt",
+    "static/media/CV.45baaa64.JPG": "/mstefa/static/media/CV.45baaa64.JPG",
+    "static/media/Icon2Small.bca1c508.png": "/mstefa/static/media/Icon2Small.bca1c508.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5b59c28e.js",
-    "static/js/2.f248169d.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.a2f61609.chunk.js"
+    "static/js/2.05ff2d9c.chunk.js",
+    "static/js/main.86a016d4.chunk.js"
   ]
 }
