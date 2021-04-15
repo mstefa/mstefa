@@ -1,12 +1,9 @@
 import styled from 'styled-components';
-import { lightGray } from "../../GlobalStyles";
+// import { darkTel, lightGray } from "../../GlobalStyles";
 
 export const StyledNav = styled.nav`
-  /* background-color: gray; */
   display: flex;
   justify-content: space-between;
-  scroll-behavior: smooth; 
-  color: ${lightGray};
 
   img{
     margin: 0.5rem 0 0.5rem 2rem;
@@ -14,15 +11,12 @@ export const StyledNav = styled.nav`
 
   ul{
     display: flex;
-    /* justify-content:space-between; */
-    /* max-width: 28rem; */
-    /* background-color:red; */
     padding: 0;
     list-style-type: none;
+    margin-right: 2rem;
 
     li{
-      /* list-style-type: none; */
-      margin-right: 2rem;
+      margin-left: 2rem;
     }
   }
 

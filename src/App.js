@@ -19,9 +19,9 @@ function App() {
       <Projects></Projects>
       <Contact></Contact>
       
-      <header className="App-header">
-        {/* <h1>Hi there! I am bulding this page, <bn/> it will be ready soon! </h1> */}
-      </header>
+      <footer>
+        Designed & Built by Matías Stefanutti
+      </footer>
       
     </div>
   );

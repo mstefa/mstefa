@@ -8,7 +8,7 @@ export var darkTel = "#08827B";
 export var lightGreen = "#41CF17";
 export var darkGreen = "#41CF17";
 export var lightGray ="#F2F2F2"
-export var mediumGray ="#D9D9D9"
+export var mediumGray ="#888888"
 export var darkGray ="#262626"
 export var maxWidth = 65;
 // export var opacityBackground = "#CF474080";
@@ -43,7 +43,22 @@ code {
 section{
   width:80vw;
   margin : 1rem 10vw 0rem 10vw ;
-
 }
 
+footer{
+  /* margin: 0 auto; */
+  font-size: 0.8rem;
+  text-align:center;
+  vertical-align: middle;
+  min-height: 3rem;
+}
+
+@media (max-width: 850px) {
+    
+  section{
+  width:90vw;
+  margin : 1rem 5vw 0rem 5vw ;
+  }
+
+  }
 `

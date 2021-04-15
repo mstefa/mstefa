@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lightTel } from "../../GlobalStyles";
 
 export const StyledSocialMedia = styled.nav`
 
@@ -18,8 +19,12 @@ export const StyledSocialMedia = styled.nav`
   }
   
   a{
-    color: white;
+    /* color: white; */
     font-size: 1.1rem;
+    :hover{
+        color:${lightTel};
+        transition: all 500ms ease;
+      }
   }
 
   .line{
@@ -28,4 +33,11 @@ export const StyledSocialMedia = styled.nav`
     border-right: 0.1rem solid white;
     position: absolute;
     }
+
+    @media (max-width: 850px) {
+    
+    display:none;
+  
+    }
+    
 `

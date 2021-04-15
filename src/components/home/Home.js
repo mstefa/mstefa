@@ -5,9 +5,10 @@ import {StyledHome} from './StyledHome'
 export default function Home() {
   return (
     <StyledHome>
-      <h1>Matías Stefanutti</h1>
+      <span>Hi, my name is</span>
+      <h1>Matías Stefanutti.</h1>
+      {/* <span>I am a</span> */}
       <h3>Full Stack Developer</h3>
-      <p>Hi there!👋 welcome to my site!</p>
     </StyledHome>
   )
 }

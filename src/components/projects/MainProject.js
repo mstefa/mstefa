@@ -4,12 +4,12 @@ import {StyledMainProject} from './StyledMainProject'
 export default function MainProject({project}) {
   return (
     <StyledMainProject>
+      <h3>{project.name} </h3>
       <div className='img-contanier'>
         <img src={process.env.PUBLIC_URL +  project.img} alt='project cover'></img>
       </div>
 
       <div className='text-container'>
-        <h3>{project.name} </h3>
         <p> {project.description} </p>
         <ul>
           {project.technologies.map((tec) => <li>{tec}</li>)}

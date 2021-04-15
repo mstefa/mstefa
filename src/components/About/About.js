@@ -8,7 +8,22 @@ export default function About() {
       <h2 id='about'>About Me</h2>
       <div >
         <div className='textContainer'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo libero. Etiam laoreet eros lacus, ac feugiat risus ultrices ac. Mauris nulla felis, lobortis a imperdiet et, porttitor non augue. Nullam eget eros nunc. Vivamus fermentum elit risus, sit amet malesuada est accumsan eget. Vestibulum ultrices ante odio, quis sagittis ipsum vehicula eget. Nam sagittis, mauris ut posuere tincidunt, magna sapien iaculis dolor, id pellentesque libero dolor sit amet augue. Aenean ornare interdum venenatis. Morbi eu massa interdum, efficitur lorem at, bibendum arcu. Nunc pulvinar lectus vel mauris bibendum facilisis.
+          <p>
+            Before joining the world of tech, I studied and worked as an aeronautical engineer. I first fell in love with coding 
+            in high school where we developed some simple’s apps on Visual Basic 🤔. 
+            In college, I always went around developing software for mechanics and aerodynamics calculus, as I did on 
+            my <a href='https://ieeexplore.ieee.org/document/7585325' target="blank">thesis</a>.
+          </p>
+          <p>
+            After working in some of first line companies as a Team Leader Engineer designing and maintaining mechanical assets, 
+            I decided to come back to codding and I joined the <a href='https://www.soyhenry.com/' target="blank">Henry bootcamp</a>.
+            Now I enjoy building a variety of digital experiences 😄.
+          </p>
+          <p>
+            As a full-stack developer, I care about producing software that is both, durable and useful. 
+            Here are a few technologies I've been working with recently:
+          </p>
+
             <ul>
             <li>JavaScript</li>
             <li>typeScipt</li>
