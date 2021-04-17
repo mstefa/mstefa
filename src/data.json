@@ -5,7 +5,7 @@
     {
       "id": 3,
       "name": "PokeApp",
-      "description": "A short project of a complete app, including the API and the client. Its aim was to create an interactive database for Pokémon’s fans implementing the technologies learned at Henry Bootcamp.",
+      "description": "A individual project of a complete app, including the API and the client. Its aim was to create an interactive database for Pokémon’s fans implementing the technologies learned at Henry Bootcamp.",
       "technologies": ["React", "Redux", "Node", "Express", "Sequelize"],
       "img": "/images/pokemon.gif",
       "repository": "https://github.com/mstefa/PokeApp",
