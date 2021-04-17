@@ -12,7 +12,7 @@ export const StyledMainProject = styled.div`
       padding-bottom: 0.5rem;
       /* color: ${lightGray}; */
       border-bottom: 0.1rem solid ${lightTel};
-      width: 10rem;
+      width: 12rem;
     }
   .img-contanier{
     img{

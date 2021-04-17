@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-export var mainRed = "#820801";
-export var darkRed = "#4F0501";
+export var mainRed = "#3b1410";
+// export var mainRed = "#820801";
+// export var darkRed = "#4F0501";
+export var darkRed = "#2f0d0a";
 export var lightRed = "#CF4740";
 export var lightTel = "#17CFC5";
 export var darkTel = "#08827B";
