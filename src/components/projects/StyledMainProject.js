@@ -7,14 +7,20 @@ export const StyledMainProject = styled.div`
 
   h3{
       position: absolute;
-      /* margin-top:0; */
       right: 0;
       padding-bottom: 0.5rem;
       border-bottom: 0.1rem solid ${lightTel};
       width: 14rem;
       font-size:1.3rem;
       margin: 1rem 0 1rem 0;
+
     }
+
+    a:hover{
+        color:${lightTel};
+        transition: all 500ms ease;
+      }
+
   .img-contanier{
     img{
       width: 40vw;
@@ -54,7 +60,11 @@ export const StyledMainProject = styled.div`
         color:${lightGray};
         font-weight: lighter;
         margin: 0 0.4rem;
+        :hover{
+        color:${lightTel};
+        transition: all 500ms ease;
       }
+      }    
   }
 
   @media (max-width: 850px) {
@@ -74,7 +84,7 @@ export const StyledMainProject = styled.div`
 
     .text-container{
       position: static;
-      max-width: 100%;
+      width: 100%;
       text-align:left;
     }
 

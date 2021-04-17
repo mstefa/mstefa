@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import { darkTel, lightGray } from "../../GlobalStyles";
+import { lightTel } from "../../GlobalStyles";
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -17,6 +17,10 @@ export const StyledNav = styled.nav`
 
     li{
       margin-left: 2rem;
+      a:hover{
+        color:${lightTel};
+        transition: all 500ms ease;
+      }
     }
   }
 

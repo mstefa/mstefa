@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <StyledNav>
       <div>
-        <img id="logo" src={Logo} width="40" height="35" className="d-inline-block align-top" alt="Matias Stefanutti" />
+        <img id="logo" src={Logo} width="50" height="45" className="d-inline-block align-top" alt="Matias Stefanutti" />
       </div>
 
       <ul>

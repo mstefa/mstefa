@@ -4,7 +4,12 @@ import {StyledMainProject} from './StyledMainProject'
 export default function MainProject({project}) {
   return (
     <StyledMainProject>
-      <h3>{project.name} </h3>
+      { project.page     
+      ? <a href={project.page}target="blank" > <h3>{project.name} </h3> </a> 
+      : project.repository 
+        ? <a href={project.repository} target="blank" > <h3>{project.name} </h3> </a>
+        : <h3>{project.name} </h3>
+      }
       <div className='img-contanier'>
         <img src={process.env.PUBLIC_URL +  project.img} alt='project cover'></img>
       </div>
