@@ -3,7 +3,7 @@ import { lightGray, lightTel, mediumGray } from "../../GlobalStyles";
 
 export const StyledContact = styled.section`
   min-height: 10rem;
-  margin: 2rem auto;
+  margin: 5rem auto;
 
   .contactContainer{
     margin-top:3rem;
@@ -12,6 +12,8 @@ export const StyledContact = styled.section`
     margin: 1rem auto;
     max-width: 40rem;
     color:${mediumGray};
+    padding: 5rem;
+
 
     a{
       font-size: 1.5rem;
@@ -32,5 +34,9 @@ export const StyledContact = styled.section`
     
 
   }
-  /* background-color: gray; */
+  @media (max-width: 450px) {
+
+    padding: 0;
+
+  }
 `

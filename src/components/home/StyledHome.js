@@ -1,14 +1,10 @@
 import styled from 'styled-components'
-import { lightTel, maxWidth, mediumGray} from "../../GlobalStyles";
+import { lightTel, mediumGray} from "../../GlobalStyles";
 
 export const StyledHome = styled.section`
-  /* max-width: ${maxWidth}rem; */
-  /* min-height: 30vh; */
   padding: 6rem 0rem 10rem 4rem;
   display:flex;
   flex-direction:column;
-  /* background-color: gray; */
-
 
   h1{
     font-size: 5rem;

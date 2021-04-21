@@ -10,6 +10,7 @@ export const StyledNav = styled.nav`
   z-index:1;
   top:${props => props.top };
   background-color:${backgroundRed + 'b0'};
+  animation: fadeIn linear 7s;
   
 
   img{
