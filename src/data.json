@@ -4,6 +4,18 @@
   "projects": [
     {
       "id": 3,
+      "name": "Sneakers shop",
+      "description": "It is a project launched in just one month and carried out by a team of nine developers. The aim of the project was to create an e-commerce from scratch as a final project of the Henry Bootcamp. On it, it was decided to use TypeScript and GraphQL.",
+      "technologies": ["TypeScipt", "React", "GraphQL",  "Express", "Sequelize"],
+      "img": "/images/Sneakers.webp",
+      "repository": "https://github.com/mstefa/sneakersShop",
+      "page": "https://shoes-g1.vercel.app/",
+      "year": "2021",
+      "main": true,
+      "show": true
+    },
+    {
+      "id": 3,
       "name": "PokeApp",
       "description": "A individual project of a complete app, including the API and the client. Its aim was to create an interactive database for Pokémon’s fans implementing the technologies learned at Henry Bootcamp.",
       "technologies": ["React", "Redux", "Node", "Express", "Sequelize"],
