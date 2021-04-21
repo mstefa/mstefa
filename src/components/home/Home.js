@@ -9,6 +9,7 @@ export default function Home() {
       <h1>Matías Stefanutti.</h1>
       {/* <span>I am a</span> */}
       <h3>Full Stack Developer</h3>
+      
     </StyledHome>
   )
 }

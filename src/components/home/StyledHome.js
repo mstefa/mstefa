@@ -27,6 +27,10 @@ export const StyledHome = styled.section`
     color: ${lightTel}
   }
 
+  button{
+    margin: 2rem 0;
+  }
+
   @media (max-width: 850px) {
 
     padding: 5rem 0rem 8rem 1rem;

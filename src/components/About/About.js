@@ -34,9 +34,13 @@ export default function About() {
             <li>Sequelize</li>
             <li>GraphQl</li>
           </ul>
+
+
         </div>
         <div className='imgContainer'>
           <img src={mstefa} alt='profile'></img>
+          <a href='01mstefanutti_resume.pdf' target="blank" > <button>Resume</button> </a>
+
         </div>
       </div>
 

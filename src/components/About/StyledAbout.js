@@ -47,7 +47,8 @@ export const StyledAbout = styled.section`
       width: 30%;
       margin: 0 auto;
       display:flex;
-      justify-content: center;
+      flex-direction:column;
+      align-content: center;
 
       img{
         width: 15rem;
@@ -57,6 +58,10 @@ export const StyledAbout = styled.section`
         border-bottom: 0.1rem solid;
         border-right: 0.1rem solid;
         border-color: ${lightTel};
+      }
+
+      button{
+        margin: 1rem auto;
       }
     }
   
@@ -74,6 +79,10 @@ export const StyledAbout = styled.section`
         columns: 2;
         }
       }
+      :first-child {
+        order: 1;
+      }
+
     }
     
   }
