@@ -49,9 +49,8 @@ section{
 }
 
 h2{
-  ::before {
-    counter-increment: section;
-    content: counter(section) '.';
+  font-size:2rem;
+  .far{
     color:${lightTel};
     font-size: 1rem;
     font-weight:lighter;
@@ -81,6 +80,10 @@ button{
   section{
   width:90vw;
   margin : 1rem 5vw 0rem 5vw ;
+  }
+
+  h2{
+  font-size:1.8rem;
   }
 
   }

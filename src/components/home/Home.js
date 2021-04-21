@@ -4,7 +4,7 @@ import {StyledHome} from './StyledHome'
 
 export default function Home() {
   return (
-    <StyledHome>
+    <StyledHome id='home'>
       <span>Hi, my name is</span>
       <h1>Matías Stefanutti.</h1>
       {/* <span>I am a</span> */}

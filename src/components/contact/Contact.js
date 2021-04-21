@@ -4,7 +4,7 @@ import { StyledContact } from './StyledContact'
 export default function Contact() {
   return (
     <StyledContact>
-      <h2 id='contact'>Get In Touch</h2>
+      <h2 id='contact'> <i class="far fa-paper-plane"></i> Get In Touch</h2>
       <div className='contactContainer'>
         <p> Whether you have a question or just want to say hi, feel free to send me an email:</p>
         <a href='mailto:mstefanutti24@gmail.com' target="blank" > 

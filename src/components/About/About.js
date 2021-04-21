@@ -5,7 +5,7 @@ import { StyledAbout } from './StyledAbout'
 export default function About() {
   return (
     <StyledAbout>
-      <h2 id='about'>About Me</h2>
+      <h2 id='about'> <i class="far fa-paper-plane"></i> About Me</h2>
       <div >
         <div className='textContainer'>
           <p>
