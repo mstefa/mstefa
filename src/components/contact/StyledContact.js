@@ -7,17 +7,20 @@ export const StyledContact = styled.section`
 
   .contactContainer{
     margin-top:3rem;
-    max-width: 35rem;
+    max-width: 45rem;
     text-align: center;
     margin: 1rem auto;
     max-width: 40rem;
     color:${mediumGray};
-    padding: 5rem;
+    padding: 3rem;
 
-
+    p{
+      margin: 2rem auto;
+    }
     a{
       font-size: 1.5rem;
       color:${lightGray};
+      /* margin: 20rem auto; */
       
       .fab{
         padding: 1rem;
@@ -35,8 +38,10 @@ export const StyledContact = styled.section`
 
   }
   @media (max-width: 450px) {
-
-    padding: 0;
+    .contactContainer{
+      padding: 2rem 0.5rem;;
+    }
+    /* margin: auto; */
 
   }
 `

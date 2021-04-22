@@ -39,7 +39,7 @@ export default function About() {
         </div>
         <div className='imgContainer'>
           <img src={mstefa} alt='profile'></img>
-          <a href='01mstefanutti_resume.pdf' target="blank" > <button>Resume</button> </a>
+          <a href={`/mstefa/images/01mstefanutti-resume.pdf`} target="blank" > <button>Resume</button> </a>
 
         </div>
       </div>
