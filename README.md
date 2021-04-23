@@ -32,7 +32,7 @@ I would like to have the opportunity to work on projects that allow me to learn 
 - GraphQl / Apollo
 
 
-## Languages Staditics 
+## Languages Stats 
 
 on public GitHub repositories 
 
