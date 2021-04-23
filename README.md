@@ -1,43 +1,40 @@
 # Matias Stefanutti
 
-### Hi there 👋
-### I'm a full stack developer 
+Hi there 👋!
 
--------------------------------------------------------------------------------------------------------------------------------
-<div>
-<h3>Skills</h3>
+my name is Matías Stefanutti and I´m a **full stack developer**. I care about producing software that is both, durable and useful. I develop full-stack web applications, mostly with JavaScript and Node.js. I have experience building projects with TypeScirpt, Sequelize, Postgres, Express, React, Redux and GraphQl
 
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+I would like to have the opportunity to work on projects that allow me to learn more about the most recent technologies on back & front-end development, automated testing, debugging and deployment.
 
-<img align="left" alt="CSS3" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<br/>
 
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+## 📫 How to reach me: 
 
-<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+- **email:** [ mstefanutti24@gmail.com](mailto:mstefanutti24@gmail.com)
 
-<img align="left" alt="REDUX" width="26px" src="https://raw.githubusercontent.com/TheNear/TheNear/master/icons/redux.png" />
+- **Portfolio:** [ mstefa.github.io/mstefa/](https://mstefa.github.io/mstefa/)
+
+- **LinkedIn:** [ /matiasstefanutti </P> ](https://www.linkedin.com/in/matiasstefanutti/)
+
+- **Twitter:** [  @mstefanutti](https://twitter.com/mstefanutti)
+
+<br/>
+
+## Skills
+
+- JavaScript
+- TypeScript
+- NodeJs
+- React
+- Redux
+- Express
+- Sequelize
+- GraphQl / Apollo
 
 
-<img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+## Languages Staditics 
 
-<img align="left" alt="Express" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />
-
-<img align="left" alt="SQL" width="26px" 
-src="https://w7.pngwing.com/pngs/105/17/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-cloud-computing-blue-text-logo.png" />
-
-<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-
-<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
-
-<br />
-
-----------------------------------------------------------------------------------------------------------------------
-
-[Linkedin](https://www.linkedin.com/in/matiasstefanutti/)
-
-Twitter: [@mstefanutti](https://twitter.com/mstefanutti)
-
+on public GitHub repositories 
 
 [![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mstefa&langs_count=5&theme=tokyonight)]()
 
