@@ -1,16 +1,31 @@
 import styled from 'styled-components'
-import { lightTel, maxWidth } from "../../GlobalStyles";
+import { lightTel, animationTime } from "../../GlobalStyles";
 
 export const StyledAbout = styled.section`
-  /* max-width: ${maxWidth}rem; */
-  /* margin: 0 auto; */
+
   min-height: 25rem;
   text-align: left;
-  /* background-color: red; */
+  @keyframes slideIn {
+    from {
+      transform: translateY(1rem);
+      opacity:10%;
+    }
+    to {
+      transform: translateY(0px);
+      opacity:100%;
+    }
+  }
+
+  h2{
+    animation-duration: ${animationTime};
+    animation-name: slideIn;
+  }
 
   div{
     display:flex;
     flex-wrap: wrap;
+    animation-duration: ${animationTime};
+    animation-name: slideIn;
     
     .textContainer{
       /* flex-basis: 60%; */

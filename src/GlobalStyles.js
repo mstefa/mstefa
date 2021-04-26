@@ -13,7 +13,7 @@ export var lightGray = "#F2F2F2"
 export var mediumGray = "#888888"
 export var darkGray = "#262626"
 export var maxWidth = 65;
-// export var opacityBackground = "#CF474080";
+export var animationTime = "1.5s"
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -74,6 +74,7 @@ button{
   border: 0.08rem solid ${lightTel};
   border-radius: 0.5rem; 
 }
+
 
 @media (max-width: 850px) {
     

@@ -9,12 +9,8 @@ export default function NavBar() {
   window.onscroll  = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      // console.log('subiendo: ', currentScrollPos)
-      // setVisible(true);
       setTop('0');
     } else {
-      // console.log('bajando: ', top)
-      // setVisible(false);
       setTop('-5rem')
     }
     prevScrollpos = currentScrollPos;
