@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { lightGray, lightTel, darkRed } from "../../GlobalStyles";
+import { lightGray, lightTel, darkTel } from "../../GlobalStyles";
 
 export const StyledMainProject = styled.div`
   position: relative;
@@ -35,8 +35,8 @@ export const StyledMainProject = styled.div`
     text-align:right;
   
     p{
-      height: 8rem;
-      background-color: ${darkRed+ `F2`} ;
+      min-height: 8rem;
+      background-color: ${`${darkTel}F2` } ;  
       color: ${lightGray};
       padding: 0.2rem 1rem 0rem 0.1rem;
     }
@@ -69,8 +69,7 @@ export const StyledMainProject = styled.div`
 
   @media (max-width: 850px) {
     
-    margin: 1rem;
-
+    margin: 0.5rem;
     position: static;
 
     h3{
@@ -85,6 +84,10 @@ export const StyledMainProject = styled.div`
     .text-container{
       position: static;
       width: 100%;
+      p{
+        padding: 0.5rem 0.5rem;
+      }
+      /* height: auto; */
       text-align:left;
     }
 
