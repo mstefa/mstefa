@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 // export var mainRed = "#3b1410";
 export var mainRed = "#820801";
@@ -67,16 +68,6 @@ footer{
   min-height: 3rem;
 }
 
-button{
-  background-color: ${backgroundRed + '00'};
-  color:${lightTel};
-  font-size: 1rem;
-  padding: 0.8rem 1.6rem;
-  border: 0.08rem solid ${lightTel};
-  border-radius: 0.5rem; 
-}
-
-
 @media (max-width: 850px) {
     
   section{
@@ -89,4 +80,14 @@ button{
   }
 
   }
+`
+
+export const StyledMainButton = styled.button`
+  background-color: ${backgroundRed + '00'};
+  color:${lightTel};
+  font-size: 1rem;
+  padding: 0.8rem 1.6rem;
+  border: 0.08rem solid ${lightTel};
+  border-radius: 0.5rem; 
+  cursor: pointer;
 `

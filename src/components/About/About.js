@@ -1,6 +1,7 @@
 import React from 'react'
 import mstefa from '../../resources/CV.JPG'
 import { StyledAbout } from './StyledAbout'
+import { StyledMainButton } from "../../GlobalStyles";
 
 export default function About() {
   return (
@@ -39,7 +40,7 @@ export default function About() {
         </div>
         <div className='imgContainer'>
           <img src={mstefa} alt='profile'></img>
-          <a href={`/mstefa/images/01mstefanutti-resume.pdf`} target="blank" > <button>Resume</button> </a>
+          <a href={`/mstefa/images/01mstefanutti-resume.pdf`} target="blank" > <StyledMainButton href={`/mstefa/images/01mstefanutti-resume.pdf`} target="blank" >Resume</StyledMainButton> </a>
 
         </div>
       </div>
