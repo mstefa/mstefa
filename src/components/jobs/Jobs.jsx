@@ -106,7 +106,7 @@ export default function Jobs() {
                     aria-labelledby={`tab-${i}`}
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}>
-                    <h3>
+                    <h4>
                       <span>{title}</span>
                       <span className="company">
                         &nbsp;@&nbsp;
@@ -114,9 +114,15 @@ export default function Jobs() {
                           {company}
                         </a>
                       </span>
-                    </h3>
-
+                    </h4>
                     <p className="range">{range}</p>
+                    {e.items && e.items.map(i => {
+                      return (
+                        <span>{i.description}</span>
+                      )
+                    }
+
+                    )}
 
                   </StyledTabPanel>
               );

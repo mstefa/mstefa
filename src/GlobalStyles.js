@@ -11,11 +11,22 @@ export var lightTel = "#17CFC5";
 export var darkTel = "#06625C";
 export var lightGreen = "#41CF17";
 export var darkGreen = "#41CF17";
-export var lightGray = "#F2F2F2"
-export var mediumGray = "#888888"
-export var darkGray = "#262626"
+export var lightGray = "#F2F2F2";
+export var mediumGray = "#888888";
+export var darkGray = "#262626";
+
 export var maxWidth = 65;
-export var animationTime = "1.5s"
+export var animationTime = "1.5s";
+
+// font sizes
+export var fzxxs= "12px";
+export var fzxs= "13px";
+export var fzsm= "14px";
+export var fzmd= "16px";
+export var fzlg= "18px";
+export var fzxl= "20px";
+export var fzxxl= "22px";
+export var fzheading= "32px";
 
 
 export const GlobalStyles = createGlobalStyle`

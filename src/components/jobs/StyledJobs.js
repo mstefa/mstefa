@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { maxWidth } from "../../GlobalStyles";
-import { lightTel, darkGray } from "../../GlobalStyles";
+import { lightTel, darkGray, fzxs, fzxxl } from "../../GlobalStyles";
 
 export const StyledJobs = styled.section`
   max-width: ${maxWidth}rem;
@@ -41,7 +41,7 @@ export const StyledTabList = styled.div`
   // z-index: 3;
   width: max-content;
   padding: 0;
-  margin: 0;
+  margin: 0.5rem 0 0 0 ;
   list-style: none;
   @media (max-width: 600px) {
     display: flex;
@@ -81,20 +81,21 @@ export const StyledTabButton = styled.button`
   display: flex;
   align-items: center;
   width: 100%;
-  height: var(--tab-height);
+  height: 2.5rem;
   padding: 0 20px 2px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
   border-left: 2px solid ${lightTel};
   background-color: transparent;
   color: ${({ isActive }) => (isActive ? lightTel : darkGray)};
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
+  font-size: ${fzxs};
   text-align: left;
   white-space: nowrap;
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
   @media (max-width: 600px) {
-
     min-width: 120px;
     padding: 0 15px;
     border-left: 0;
@@ -111,22 +112,22 @@ export const StyledHighlight = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
-  width: 2px;
-  height: var(--tab-height);
-  border-radius: var(--border-radius);
-  background: var(--green);
-  transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
+  z-index: 1;
+  width: 0.15rem;
+  height: 1rem;
+  border-radius: 0.3rem;
+  background: ${lightTel};
+  transform: translateY(calc(${({ activeTabId }) => activeTabId} * 1rem));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
   @media (max-width: 600px) {
     top: auto;
     bottom: 0;
     width: 100%;
-    max-width: var(--tab-width);
+    max-width: 2.5rem;
     height: 2px;
     margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    transform: translateX(calc(${({ activeTabId }) => activeTabId} * 1rem));
   }
   @media (max-width: 480px) {
     margin-left: 25px;
@@ -136,6 +137,7 @@ export const StyledHighlight = styled.div`
 export const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
+  
   margin-left: 20px;
 
   @media (max-width: 600px) {
@@ -146,24 +148,24 @@ export const StyledTabPanels = styled.div`
 export const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px 5px;
+  padding: 10px 0px;
 
 
-  h3 {
+  h4 {
+    margin-top: 0;
     margin-bottom: 2px;
-    font-size: var(--fz-xxl);
+    font-size: ${fzxxl};
     font-weight: 500;
     line-height: 1.3;
 
     .company {
-      color: var(--green);
+      color: ${lightTel};
     }
   }
 
   .range {
     margin-bottom: 25px;
-    color: var(--light-slate);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
+    color: ${lightTel};
+    font-size: ${fzxs};
   }
 `;
