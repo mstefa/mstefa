@@ -1,47 +1,47 @@
-import styled from 'styled-components'
-import { maxWidth } from "../../GlobalStyles";
-import { lightTel, darkGray, fzxs, fzxxl } from "../../GlobalStyles";
+import styled from 'styled-components';
+import { maxWidth } from '../../GlobalStyles';
+import { darkRed, lightTel, lightGray, fzxs, fzxxl } from '../../GlobalStyles';
 
 export const StyledJobs = styled.section`
   max-width: ${maxWidth}rem;
   min-height: 70vh;
   margin: 5rem auto;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   /* background-color: gray; */
-  h3{
-      width: 100%;
-      padding-bottom: 0.5rem;
-      font-size:1.3rem;
-      margin: 1rem 0 1rem 0;
+  h3 {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
   }
 
-  .inner{
+  .inner {
     margin: 1rem auto;
     max-width: 60%;
-    display:flex;
-
-      .inner {
     display: flex;
 
-    @media (max-width: 600px) {
-      display: block;
-    }
+    .inner {
+      display: flex;
 
-    // Prevent container from jumping
-    @media (min-width: 700px) {
-      min-height: 340px;
+      @media (max-width: 600px) {
+        display: block;
+      }
+
+      // Prevent container from jumping
+      @media (min-width: 700px) {
+        min-height: 340px;
+      }
     }
   }
-}
-`
+`;
 
 export const StyledTabList = styled.div`
   position: relative;
   // z-index: 3;
   width: max-content;
   padding: 0;
-  margin: 0.5rem 0 0 0 ;
+  margin: 0.5rem 0 0 0;
   list-style: none;
   @media (max-width: 600px) {
     display: flex;
@@ -77,18 +77,15 @@ export const StyledTabList = styled.div`
 `;
 
 export const StyledTabButton = styled.button`
-
   display: flex;
   align-items: center;
   width: 100%;
   height: 2.5rem;
   padding: 0 20px 2px;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 0;
+  border: 0;
   border-left: 2px solid ${lightTel};
   background-color: transparent;
-  color: ${({ isActive }) => (isActive ? lightTel : darkGray)};
+  color: ${({ isActive }) => (isActive ? lightTel : lightGray)};
   font-size: ${fzxs};
   text-align: left;
   white-space: nowrap;
@@ -99,12 +96,12 @@ export const StyledTabButton = styled.button`
     min-width: 120px;
     padding: 0 15px;
     border-left: 0;
-    border-bottom: 2px solid ${lightTel};;
+    border-bottom: 2px solid ${lightTel};
     text-align: center;
   }
   &:hover,
   &:focus {
-    background-color: ${lightTel};;
+    background-color: ${darkRed};
   }
 `;
 
@@ -137,7 +134,6 @@ export const StyledHighlight = styled.div`
 export const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
-  
   margin-left: 20px;
 
   @media (max-width: 600px) {
@@ -149,7 +145,6 @@ export const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
   padding: 10px 0px;
-
 
   h4 {
     margin-top: 0;
@@ -167,5 +162,33 @@ export const StyledTabPanel = styled.div`
     margin-bottom: 25px;
     color: ${lightTel};
     font-size: ${fzxs};
+  }
+
+  .itemsList {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0.5rem 0 ;
+    }
+    li::before {
+      content: '> ';
+      color: ${lightTel};
+    }
+  }
+
+  .technologiesList {
+    display:flex;
+        flex-wrap:wrap;
+        justify-content: flex-end;
+        list-style: none;
+        li {
+          font-size:${fzxs};
+          margin: 0 0.2rem ;
+        }
+        li::before {
+          content: '# ';
+          color:${lightTel};
+        }
+    }
   }
 `;

@@ -116,14 +116,22 @@ export default function Jobs() {
                       </span>
                     </h4>
                     <p className="range">{range}</p>
-                    {e.items && e.items.map(i => {
-                      return (
-                        <span>{i.description}</span>
-                      )
-                    }
-
-                    )}
-
+                    <ul className='itemsList'> 
+                      {e.items && e.items.map(i => {
+                        return (
+                          <li>{i.description}</li>
+                        )
+                      }
+                      )}
+                    </ul>
+                    <ul className='technologiesList'> 
+                      {e.mainTechnologies && e.mainTechnologies.map(t => {
+                        return (
+                          <li>{t.name}</li>
+                        )
+                      }
+                      )}
+                    </ul>
                   </StyledTabPanel>
               );
             })}

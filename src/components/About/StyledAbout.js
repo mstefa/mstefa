@@ -46,9 +46,7 @@ export const StyledAbout = styled.section`
       ul {
         columns: 3;
         li {
-          /* list-style-type: '👉'; */
           list-style: none;
-          /* padding-inline-start: 0.4rem; */
         }
         li::before {
           content: '> ';
