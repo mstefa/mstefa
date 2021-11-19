@@ -4,7 +4,8 @@ import {createGlobalStyle} from "styled-components";
 // export var mainRed = "#3b1410";
 export var mainRed = "#820801";
 export var darkRed = "#4F0501";
-export var backgroundRed = "#060505";
+export var ultraDarkRed = "#2f0d0a";
+export var backgroundRed = "#111010";
 // export var backgroundRed = "#2f0d0a";
 export var lightRed = "#CF4740";
 export var lightTel = "#17CFC5";
@@ -15,7 +16,7 @@ export var lightGray = "#F2F2F2";
 export var mediumGray = "#888888";
 export var darkGray = "#262626";
 
-export var maxWidth = 65;
+export var maxWidth = "80rem";
 export var animationTime = "1.5s";
 
 // font sizes

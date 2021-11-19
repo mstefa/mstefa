@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { lightTel, mediumGray, animationTime} from "../../GlobalStyles";
+import { lightTel, lightRed, mediumGray, animationTime} from "../../GlobalStyles";
 
 export const StyledHome = styled.section`
   padding: 6rem 0rem 10rem 4rem;
@@ -27,7 +27,7 @@ export const StyledHome = styled.section`
 
   h3{
     font-size: 3rem;
-    color:${mediumGray};
+    color:${lightRed};
     margin: 0 0 1rem 0;
     animation-duration: ${animationTime};
     animation-name: slideInX;

@@ -3,7 +3,7 @@
   "_comment" : " recopilatory information of project built by me. TECHNOLOGIES: main tech used (no more that 5), MAIN: will be show in main project, if not itll be show on a second part. SHOW: if false will not be render",
   "projects": [
     {
-      "id": 3,
+      "id": 4,
       "name": "Sneakers shop",
       "description": "It is a project launched in just one month and carried out by a team of nine developers. The aim of the project was to create an e-commerce from scratch as a final project of the Henry Bootcamp. On it, it was decided to use TypeScript and GraphQL.",
       "technologies": ["TypeScipt", "React", "GraphQL",  "Express", "Sequelize"],

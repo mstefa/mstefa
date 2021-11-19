@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { maxWidth } from '../../GlobalStyles';
-import { darkRed, lightTel, lightGray, fzxs, fzxxl } from '../../GlobalStyles';
+import { darkGray, lightTel, lightGray, fzxs, fzxxl } from '../../GlobalStyles';
+
+let tabHeigth = "2.5rem";
+let tabHighlightWidth = "0.15rem"
 
 export const StyledJobs = styled.section`
-  max-width: ${maxWidth}rem;
+  max-width: ${maxWidth};
   min-height: 70vh;
   margin: 5rem auto;
   display: flex;
@@ -18,7 +21,7 @@ export const StyledJobs = styled.section`
 
   .inner {
     margin: 1rem auto;
-    max-width: 60%;
+    max-width: ${maxWidth};
     display: flex;
 
     .inner {
@@ -80,10 +83,10 @@ export const StyledTabButton = styled.button`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 2.5rem;
+  height: ${tabHeigth};
   padding: 0 20px 2px;
   border: 0;
-  border-left: 2px solid ${lightTel};
+  border-left: ${tabHighlightWidth} solid ${darkGray};
   background-color: transparent;
   color: ${({ isActive }) => (isActive ? lightTel : lightGray)};
   font-size: ${fzxs};
@@ -101,7 +104,7 @@ export const StyledTabButton = styled.button`
   }
   &:hover,
   &:focus {
-    background-color: ${darkRed};
+    background-color: ${darkGray};
   }
 `;
 
@@ -110,11 +113,11 @@ export const StyledHighlight = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
-  width: 0.15rem;
-  height: 1rem;
+  width: ${tabHighlightWidth};
+  height:${tabHeigth};
   border-radius: 0.3rem;
   background: ${lightTel};
-  transform: translateY(calc(${({ activeTabId }) => activeTabId} * 1rem));
+  transform: translateY(calc(${({ activeTabId }) => activeTabId} * ${tabHeigth}));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
   @media (max-width: 600px) {
@@ -134,6 +137,7 @@ export const StyledHighlight = styled.div`
 export const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
+  max-width: 40rem;
   margin-left: 20px;
 
   @media (max-width: 600px) {

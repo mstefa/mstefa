@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { lightGray, lightTel, darkTel } from "../../GlobalStyles";
+import { lightGray, darkGray, lightTel, darkTel } from "../../GlobalStyles";
 
 export const StyledMainProject = styled.div`
   position: relative;
@@ -23,20 +23,20 @@ export const StyledMainProject = styled.div`
 
   .img-contanier{
     img{
-      width: 40vw;
+      width: 60%;
     }
   }
 
   .text-container{
     position: absolute;
     top: 3rem;
-    left:35vw;
-    width: 48vw;
+    left:55%;
+    width: 45%;
     text-align:right;
   
     p{
       min-height: 8rem;
-      background-color: ${`${darkTel}F2` } ;  
+      background-color: ${`${darkGray}F2` } ;  
       color: ${lightGray};
       padding: 0.2rem 1rem 0rem 0.1rem;
     }
