@@ -3,13 +3,15 @@ import { maxWidth } from '../../GlobalStyles';
 import { darkGray, lightTel, lightGray, fzxs, fzxxl } from '../../GlobalStyles';
 
 let tabHeigth = "2.5rem";
-let tabHighlightWidth = "0.15rem"
+let tabHighlightWidth = "0.15rem";
+let tabWidth =  "10rem";
+
 
 export const StyledJobs = styled.section`
   max-width: ${maxWidth};
-  min-height: 70vh;
+  min-height: 50vh;
   margin: 5rem auto;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   /* background-color: gray; */
   h3 {
@@ -24,9 +26,6 @@ export const StyledJobs = styled.section`
     max-width: ${maxWidth};
     display: flex;
 
-    .inner {
-      display: flex;
-
       @media (max-width: 600px) {
         display: block;
       }
@@ -36,7 +35,6 @@ export const StyledJobs = styled.section`
         min-height: 340px;
       }
     }
-  }
 `;
 
 export const StyledTabList = styled.div`
@@ -92,14 +90,15 @@ export const StyledTabButton = styled.button`
   font-size: ${fzxs};
   text-align: left;
   white-space: nowrap;
+
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
   @media (max-width: 600px) {
-    min-width: 120px;
+    width: ${tabWidth};
     padding: 0 15px;
     border-left: 0;
-    border-bottom: 2px solid ${lightTel};
+    border-bottom: ${tabHighlightWidth} solid ${darkGray};
     text-align: center;
   }
   &:hover,
@@ -124,13 +123,10 @@ export const StyledHighlight = styled.div`
     top: auto;
     bottom: 0;
     width: 100%;
-    max-width: 2.5rem;
+    max-width: ${tabWidth};
     height: 2px;
     margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * 1rem));
-  }
-  @media (max-width: 480px) {
-    margin-left: 25px;
+    transform: translateX(calc(${({ activeTabId }) => activeTabId} * ${tabWidth} ));
   }
 `;
 
@@ -194,5 +190,5 @@ export const StyledTabPanel = styled.div`
           color:${lightTel};
         }
     }
-  }
+  
 `;

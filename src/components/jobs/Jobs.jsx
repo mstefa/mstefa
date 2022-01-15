@@ -72,7 +72,7 @@ export default function Jobs() {
     <StyledJobs>
         <h2 id='projects'> <i class="far fa-paper-plane"></i>Where I’ve Worked</h2>
         <div className="inner">
-        <StyledTabList role="tablist" aria-label="Job tabs"> {/*onKeyDown={e => onKeyDown(e)} */}
+          <StyledTabList role="tablist" aria-label="Job tabs"> {/*onKeyDown={e => onKeyDown(e)} */}
           {jobsData && jobsData.map((e, i) => {
               const  company  = e.company;
               return (
@@ -90,10 +90,10 @@ export default function Jobs() {
                 </StyledTabButton>
               );
             })}
-          <StyledHighlight activeTabId={activeTabId} />
-        </StyledTabList>
+            <StyledHighlight activeTabId={activeTabId} />
+          </StyledTabList>
 
-        <StyledTabPanels>
+          <StyledTabPanels>
           {jobsData &&
             jobsData.map((e, i) => {
               const { title, url, company, range } = e;
@@ -135,7 +135,7 @@ export default function Jobs() {
                   </StyledTabPanel>
               );
             })}
-        </StyledTabPanels>
+          </StyledTabPanels>
       </div>
       {/* <div className='description-container'>
         <h3>Software enginer @ <a href="https://mercadolibre.com/">Mercado Libre</a></h3>
