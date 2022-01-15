@@ -65,7 +65,7 @@ export const StyledAbout = styled.section`
 
       img{
         width: 15rem;
-        height:13rem;
+        height:19rem;
         padding-bottom:0.3rem;
         padding-right:0.3rem;
         border-bottom: 0.1rem solid;

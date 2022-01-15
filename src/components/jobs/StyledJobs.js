@@ -11,9 +11,7 @@ export const StyledJobs = styled.section`
   max-width: ${maxWidth};
   min-height: 50vh;
   margin: 5rem auto;
-  /* display: flex; */
   flex-direction: column;
-  /* background-color: gray; */
   h3 {
     width: 100%;
     padding-bottom: 0.5rem;
