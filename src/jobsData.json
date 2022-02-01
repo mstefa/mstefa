@@ -1,0 +1,55 @@
+[
+  {
+  "company": "Mercado Libre",
+  "title": "Software Engineer Analyst",
+  "url": "https://mercadolibre.com/",
+  "range": "05-2021 - Present",
+  "short_description": "Part of the CX-IT team",
+  "items": [
+    {"description": "Replacing the old legacy monolith chat application services with a micro-services structure"},
+    {"description": "Mantining communication channels applications, such as phone call and Whatsapp integrations"},
+    {"description": "Manage and implement changes to improve resiliency"},
+    {"description": "Keep updated infrastructure in AWS stacks"}
+  ],
+  "skills": [
+    {"name": "GoLang"},
+    {"name": "JavaScript"},
+    {"name": "Microservices"},
+    {"name": "Hexagonal Architecture"}
+  ]
+  },
+  {
+    "company": "Henry",
+    "title": "Teaching Assistant",
+    "url": "https://www.soyhenry.com/",
+    "range": "05-2021 - 07-2021",
+    "short_description": "Part-time",
+    "items": [
+      {"description": "Supporting a designated group of students undertaking teacher designated activities"},
+      {"description": "Promote their own continuous professional development, and engage enthusiastically with the processes of become a developer."}
+    ],
+    "skills": [
+      {"name": "JavaScript"},
+      {"name": "TypeScript"},
+      {"name": "React"},
+      {"name": "Node"}
+    ]
+  },
+  {
+    "company": "Previous Experience",
+    "title": "Aeronautical Engineer",
+    "url": "",
+    "range": "2012 - 2020",
+    "short_description": "Full-time",
+    "items": [
+      {"description": "working in main players of industries like Siemens and Airbus"},
+      {"description": "Leading multidisciplinary team on differents sites"},
+      {"description": "Negotiations with customers and contractors"}
+    ],
+    "skills": [
+      {"name": "multicultural working environment"},
+      {"name": "Project Management"},
+      {"name": "Leadership"}
+    ]
+  }
+]

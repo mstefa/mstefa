@@ -37,7 +37,6 @@ export const StyledJobs = styled.section`
 
 export const StyledTabList = styled.div`
   position: relative;
-  // z-index: 3;
   width: max-content;
   padding: 0;
   margin: 0.5rem 0 0 0;
@@ -131,7 +130,7 @@ export const StyledHighlight = styled.div`
 export const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
-  max-width: 40rem;
+  max-width: 60rem;
   margin-left: 20px;
 
   @media (max-width: 600px) {
@@ -174,7 +173,7 @@ export const StyledTabPanel = styled.div`
     }
   }
 
-  .technologiesList {
+  .skillsList {
     display:flex;
         flex-wrap:wrap;
         justify-content: flex-end;

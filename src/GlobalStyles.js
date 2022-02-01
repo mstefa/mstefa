@@ -16,18 +16,18 @@ export var lightGray = "#F2F2F2";
 export var mediumGray = "#888888";
 export var darkGray = "#262626";
 
-export var maxWidth = "80rem";
+export var maxWidth = "70rem";
 export var animationTime = "1.5s";
 
 // font sizes
 export var fzxxs= "12px";
-export var fzxs= "13px";
-export var fzsm= "14px";
-export var fzmd= "16px";
-export var fzlg= "18px";
-export var fzxl= "20px";
-export var fzxxl= "22px";
-export var fzheading= "32px";
+export var fzxs= "15px";
+export var fzsm= "18px";
+export var fzmd= "22px";
+export var fzlg= "28px";
+export var fzxl= "30px";
+export var fzxxl= "32px";
+export var fzheading= "42px";
 
 
 export const GlobalStyles = createGlobalStyle`

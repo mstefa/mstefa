@@ -1,49 +1,11 @@
 import {React, useState, useEffect, useRef} from 'react'
 import {StyledJobs, StyledTabList, StyledTabButton,StyledHighlight, StyledTabPanels, StyledTabPanel } from './StyledJobs'
-// import { KEY_CODES } from '@utils';
+import jobsData from "../../jobsData.json";
 
 
 export default function Jobs() {
-
-  let jobsData = [
-    {
-    company: "Mercado Libre",
-    title: "Software Engineer Analyst",
-    url: "https://mercadolibre.com/",
-    range: "05-2021 - Present",
-    shortDescription: "Part of the CX-IT team",
-    items: [
-      {description: "Replacing the old legacy monolith chat application services with a micro-services structure"},
-      {description: "Mantining communication channels applications, such as phone call and Whatsapp integrations"},
-      {description: "Manage and implement changes to improve resiliences"},
-      {description: "Keep updated imfrastructure in AWS stacks"},
-    ],
-    mainTechnologies: [
-      {name: "GoLang"},
-      {name: "JavaScript"},
-      {name: "Microservices"},
-      {name: "Hexagonal Architecture"}
-    ]
-    },
-    {
-      company: "Henry",
-      title: "Teaching Assistant",
-      url: "https://www.soyhenry.com/",
-      range: "05-2021 - 07-2021",
-      shortDescription: "Part-time",
-      items: [
-        {description: "Supporting a designated group of students undertaking teacher designated activities"},
-        {description: "Promote their own continuous professional development, and engage enthusiastically with the processes of become a developer."},
-      ],
-      mainTechnologies: [
-        {name: "JavaScript"},
-        {name: "TypeScript"},
-        {name: "React"},
-        {name: "Node"}
-      ]
-    }
-  ];
-
+  
+  
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
@@ -108,12 +70,15 @@ export default function Jobs() {
                     hidden={activeTabId !== i}>
                     <h4>
                       <span>{title}</span>
-                      <span className="company">
-                        &nbsp;@&nbsp;
-                        <a href={url} >
-                          {company}
-                        </a>
-                      </span>
+                      {
+                        url &&
+                        <span className="company">
+                          &nbsp;@&nbsp;
+                          <a href={url} >
+                            {company}
+                          </a>
+                        </span>
+                      }
                     </h4>
                     <p className="range">{range}</p>
                     <ul className='itemsList'> 
@@ -124,10 +89,10 @@ export default function Jobs() {
                       }
                       )}
                     </ul>
-                    <ul className='technologiesList'> 
-                      {e.mainTechnologies && e.mainTechnologies.map(t => {
+                    <ul className='skillsList'> 
+                      {e.skills && e.skills.map(s => {
                         return (
-                          <li>{t.name}</li>
+                          <li>{s.name}</li>
                         )
                       }
                       )}
