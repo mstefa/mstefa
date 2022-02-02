@@ -1,19 +1,33 @@
-import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 // export var mainRed = "#3b1410";
 export var mainRed = "#820801";
 export var darkRed = "#4F0501";
-export var backgroundRed = "#2f0d0a";
+export var ultraDarkRed = "#2f0d0a";
+export var backgroundRed = "#111010";
+// export var backgroundRed = "#2f0d0a";
 export var lightRed = "#CF4740";
 export var lightTel = "#17CFC5";
 export var darkTel = "#06625C";
 export var lightGreen = "#41CF17";
 export var darkGreen = "#41CF17";
-export var lightGray = "#F2F2F2"
-export var mediumGray = "#888888"
-export var darkGray = "#262626"
-export var maxWidth = 65;
-export var animationTime = "1.5s"
+export var lightGray = "#F2F2F2";
+export var mediumGray = "#888888";
+export var darkGray = "#262626";
+
+export var maxWidth = "70rem";
+export var animationTime = "1.5s";
+
+// font sizes
+export var fzxxs= "12px";
+export var fzxs= "15px";
+export var fzsm= "18px";
+export var fzmd= "22px";
+export var fzlg= "28px";
+export var fzxl= "30px";
+export var fzxxl= "32px";
+export var fzheading= "42px";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -66,16 +80,6 @@ footer{
   min-height: 3rem;
 }
 
-button{
-  background-color: ${backgroundRed + '00'};
-  color:${lightTel};
-  font-size: 1rem;
-  padding: 0.8rem 1.6rem;
-  border: 0.08rem solid ${lightTel};
-  border-radius: 0.5rem; 
-}
-
-
 @media (max-width: 850px) {
     
   section{
@@ -88,4 +92,14 @@ button{
   }
 
   }
+`
+
+export const StyledMainButton = styled.button`
+  background-color: ${backgroundRed + '00'};
+  color:${lightTel};
+  font-size: 1rem;
+  padding: 0.8rem 1.6rem;
+  border: 0.08rem solid ${lightTel};
+  border-radius: 0.5rem; 
+  cursor: pointer;
 `

@@ -3,7 +3,7 @@ import {StyledMainProject} from './StyledMainProject'
 
 export default function MainProject({project}) {
   return (
-    <StyledMainProject>
+    <StyledMainProject id={project.id}>
       { project.page     
       ? <a href={project.page}target="blank" > <h3>{project.name} </h3> </a> 
       : project.repository 
