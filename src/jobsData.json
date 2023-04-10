@@ -1,9 +1,44 @@
 [
   {
+    "company": "InnoIT Consulting",
+    "title": "SSr Backend Developer",
+    "url": "https://www.settlenetwork.com/",
+    "range": "02-2022 -> 03-2023",
+    "short_description": "Typescript Backend Developer creating high-quality platforms",
+    "items": [
+      {"description": "Backend Developer with Typescript, creating high-quality platforms for a seamless user experience."},
+      {"description": "Improving customer relationships through innovative platforms."},
+      {"description": "Improving platform quality and performance for an efficient user experience."}
+    ],
+    "skills": [
+      {"name": "TypeScript"},
+      {"name": "Microservices"},
+      {"name": "Microsoft Azure"},
+      {"name": "Microsoft Bot Framework"}
+    ]
+    },
+  {
+    "company": "Settle Network",
+    "title": "SSr Backend Developer",
+    "url": "https://www.settlenetwork.com/",
+    "range": "02-2022 -> 03-2023",
+    "short_description": "Member of the backend team of a fintech and crypto project",
+    "items": [
+      {"description": "Build and develop a new fiat and crypto wallet project as a Backend Developer, utilizing JavaScript and Typescript, and taking on modular responsibility for backend development"},
+      {"description": "Work in a small start-up environment, and an eagerness to take on challenges such as reducing infrastructure costs and learning about crypto technologies"},
+      {"description": "Collaborate with a team of developers to deliver high-quality backend systems, ensuring seamless functionality of the fiat and crypto wallet project."}
+    ],
+    "skills": [
+      {"name": "JavaScript"},
+      {"name": "Microservices"},
+      {"name": "Crypto currencies"}
+    ]
+    },
+  {
   "company": "Mercado Libre",
   "title": "Software Engineer Analyst",
   "url": "https://mercadolibre.com/",
-  "range": "05-2021 - Present",
+  "range": "05-2021 -> 02-2022",
   "short_description": "Part of the CX-IT team",
   "items": [
     {"description": "Replacing the old legacy monolith chat application services with a micro-services structure"},
@@ -13,7 +48,7 @@
   ],
   "skills": [
     {"name": "GoLang"},
-    {"name": "JavaScript"},
+    {"name": "Java"},
     {"name": "Microservices"},
     {"name": "Hexagonal Architecture"}
   ]
@@ -22,7 +57,7 @@
     "company": "Henry",
     "title": "Teaching Assistant",
     "url": "https://www.soyhenry.com/",
-    "range": "05-2021 - 07-2021",
+    "range": "05-2021 -> 07-2021",
     "short_description": "Part-time",
     "items": [
       {"description": "Supporting a designated group of students undertaking teacher designated activities"},
@@ -39,7 +74,7 @@
     "company": "Previous Experience",
     "title": "Aeronautical Engineer",
     "url": "",
-    "range": "2012 - 2020",
+    "range": "2012 -> 2020",
     "short_description": "Full-time",
     "items": [
       {"description": "working in main players of industries like Siemens and Airbus"},
