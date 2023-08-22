@@ -2,9 +2,9 @@
 
 Hi there 👋!
 
-my name is Matías Stefanutti and I´m a **full stack developer**. I care about producing software that is both, durable and useful. I develop full-stack web applications, mostly with JavaScript and Node.js. I have experience building projects with TypeScirpt, Sequelize, Postgres, Express, React, Redux and GraphQl
+my name is Matías Stefanutti and I´m a **Software Engineer**. I care about producing software that is both, durable and useful. I develop full-stack web applications, mostly with JavaScript and Node.js. I have experience building projects with TypeScript, Golang, Java and React.
 
-I would like to have the opportunity to work on projects that allow me to learn more about the most recent technologies on back & front-end development, automated testing, debugging and deployment.
+I would like to have the opportunity where I can add value from my experience facing new challenges with special interest on large volumes of data and high scalability rates. 
 
 <br/>
 
@@ -22,14 +22,15 @@ I would like to have the opportunity to work on projects that allow me to learn 
 
 ## Skills
 
-- JavaScript
-- TypeScript
 - NodeJs
+- TypeScript
+- GoLang
+- Java
 - React
-- Redux
-- Express
-- Sequelize
-- GraphQl / Apollo
+- SQL and NoSQL
+- Kubernetes
+- hexagonal architecture / DDD
+- TDD
 
 
 ## Languages Stats 
