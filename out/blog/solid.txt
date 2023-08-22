@@ -1,0 +1,136 @@
+0:["M_TmFIoBdN-Gvz2UKOgm0",[[["",{"children":["blog",{"children":[["slug","solid","d"],{"children":["__PAGE__?{\"slug\":\"solid\"}",{}]}]}]},"$undefined","$undefined",true],"$L1",[[],"$L2"]]]]
+3:HL["./_next/static/css/75dd5876a2dd1cff.css",{"as":"style"}]
+4:HL["./_next/static/css/87610fbfb7f110a4.css",{"as":"style"}]
+5:I{"id":7767,"chunks":["272:static/chunks/webpack-942983ef581a37a3.js","971:static/chunks/fd9d1056-d05980fb1bd4117c.js","596:static/chunks/596-1aa0b84edd7f9576.js"],"name":"default","async":false}
+6:I{"id":7920,"chunks":["272:static/chunks/webpack-942983ef581a37a3.js","971:static/chunks/fd9d1056-d05980fb1bd4117c.js","596:static/chunks/596-1aa0b84edd7f9576.js"],"name":"default","async":false}
+1:[null,["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"shortcut icon","href":"./favicon.ico"}]}],["$","body",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":"$undefined","childProp":{"current":[null,["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children",["slug","solid","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L7","$L8",null],"segment":"__PAGE__?{\"slug\":\"solid\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"./_next/static/css/87610fbfb7f110a4.css","precedence":"next"}]]}],"segment":["slug","solid","d"]},"styles":[]}]}]}],null],"segment":"blog"},"styles":[["$","link","0",{"rel":"stylesheet","href":"./_next/static/css/75dd5876a2dd1cff.css","precedence":"next"}]]}]}]]}],null]
+2:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"mstefa blog"}],["$","meta","2",{"name":"description","content":"Matias Stefanutti personal Blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"593x457"}]]
+9:I{"id":8406,"chunks":["308:static/chunks/app/blog/[slug]/page-306665cb13250b70.js"],"name":"MdxContent","async":false}
+a:T27fd,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    p: "p",
+    h2: "h2",
+    h3: "h3",
+    blockquote: "blockquote",
+    ul: "ul",
+    li: "li",
+    strong: "strong"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsx(_components.p, {
+      children: "Solid es un acrónimo nemotécnico de cinco principios reconocidos para generar código autodocumentado, flexible y mantenible. Estos cincos principios son una selección de principios publicados por Robert C. Martin, uncle Bob para los amigos 😜, en un artículo del 2000 titulado Design Principles and Design Patterns."
+    }), "\n", _jsx(_components.p, {
+      children: "Si bien uncle Bob no invento estos principios, él fue quien los agrupo sistemáticamente. En su artículo que cualquier aplicación, por más eficiente o exitosa que sea en su tarea, siempre va a sufrir cambios a lo largo de su vida útil pudiendo ir degradándose, si no se siguen ciertos lineamientos para evitarlo."
+    }), "\n", _jsx(_components.h2, {
+      children: "Los Cinco principios"
+    }), "\n", _jsx(_components.h3, {
+      children: "Single Responsibility:"
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsx(_components.p, {
+        children: "“nunca debe haber más de una razón para que un módulo cambie”"
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "Este es el principio más sencillo de entender. Que haga una sola cosa, y la haga bien. Aunque es probable que diferentes personas pueden interpretarlo de diferente manera. Es decir, ¿como definimos una responsabilidad única?"
+    }), "\n", _jsx(_components.h3, {
+      children: "Open/Closed Principle"
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsx(_components.p, {
+        children: "“Un módulo debe estar abierto para la extensión, pero cerrado para la modificación”"
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "El ejemplo más tradicional es el siguiente. Supongamos que para un nuevo feature de nuestra app podemos reutilizar los métodos de una clase ya existente. Pero para nuestro nuevo caso también necesitamos agregar más funcionalidades a esta clase. Lo que este principio nos incita es a crear una nueva clase, heredando o componiendo la anterior para agregar funcionalidades, en lugar de modificarla la ya existente. De manera que reutilicemos el código (abierto a la extensión), sin modificarlo (cerrado para la modificación)"
+    }), "\n", _jsx(_components.h3, {
+      children: "Liskov’s Substitution Principle:"
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsx(_components.p, {
+        children: "“objetos de un programa deberían ser reemplazables por instancias de sus subtipos sin alterar el correcto funcionamiento del programa”"
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "Ahora se pone un poquito más complejo… por su nombre, que viene quien lo formulo por primera ves, Barbara Liskov, y porque es complicado de explicar en palabras, pero lo vamos a intentar…"
+    }), "\n", _jsx(_components.p, {
+      children: "Supongamos que, por ejemplo, como leímos en open/close principle, extendimos la funcionalidad de una clase P, creando H a partir de P. Este principio nos dice que, si lo hacemos bien, debemos poder sustituir todas las instancias de P, con H. Es decir que la clase “hija” H no pierde o cambia la funcionalidad su clase padre P."
+    }), "\n", _jsx(_components.h3, {
+      children: "Interface segregation principle."
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsx(_components.p, {
+        children: "“muchas interfaces cliente específicas son mejores que una interfaz de propósito general”"
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "El objetivo de este principio es que ningún cliente dependa de métodos que no usa. Es decir que hay que evitar que cuando se implemente una interfaz hay que implementar muchísimos métodos que no son necesarios. En cambio, si podemos tratar de implementar muchas interfaces en la aplicación que si los necesite."
+    }), "\n", _jsx(_components.h3, {
+      children: "Dependency Inversion"
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsx(_components.p, {
+        children: "“depender de abstracciones, no depender de implementaciones concretas”"
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "Esto es que los módulos de alto nivel no deberían depender de los de bajo nivel. Ambos deberían depender de abstracciones. La forma más clásica es apoyarse en interfaces, que definen un contrato, pero no implementan la lógica. Esto facilita la modificación y substitución de implementaciones"
+    }), "\n", _jsx(_components.h2, {
+      children: "No seas STUPID!"
+    }), "\n", _jsx(_components.p, {
+      children: "Así como tenemos reglas nemotécnicas para lo que hay que hacer, tenemos algunas para lo que hay que evitar. Una de ellas es STUPID, que es un conjunto de anti-patrones de los que hay que huir:"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Singleton"
+          }), ": Es su momento fue incentivado como un patrón de diseño que evita exponer los colaboradores de una clase. Y que hoy en día se lo ve como algo negativo ya que hace más difícil de detectar el acoplamiento entre clases. Se prefiere sustituir con una conveniente vía inyección de dependencias. Esto además facilita la testabilidad."]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Tight Coupling"
+          }), ": Acoplamiento entre clases que dificulta la mantenibilidad y tolerancia al cambio que proporciona la aplicación de principios SOLID"]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Untestability"
+          }), ": Código difícil de testear, o código altamente acoplado que para poder testar se necesitan generar muchos mocks."]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Premature Optimization"
+          }), ": Sucede cuando se intentan anticipar requisitos de nuestro software desarrollando abstracciones innecesarias que añaden complejidad."]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Indescriptive Naming"
+          }), ": Nomenclatura poco descriptiva tanto a nivel de clases, como variables o atributos. Esta va en contra de lo que se conoce como Clean Code."]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: [_jsx(_components.strong, {
+            children: "Duplication"
+          }), ": Duplicidad de código. Algo que los principios SOLID tratan de solucionar."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", _jsx(_components.h2, {
+      children: "Importancia e implementación"
+    }), "\n", _jsx(_components.p, {
+      children: "Los principios de SOLID se han ganado mucha reputación y han demostrado que, si son bien implementados, permiten generar código mantenible, fácil de interpretar y escalable. Si bien los principios están basados en programación orientada a objetos, actualmente se extendido, con ciertas licencias, su significado a módulos más grandes, como un microservicio, o más pequeños, inclusos algunos pueden implementarse para funciones."
+    }), "\n", _jsx(_components.p, {
+      children: "También es cierto que generan cierto hype y que son preguntas estándares de entrevistas en empresas donde, a la hora de escribir código, no son tan tenidos en cuenta 🤷‍♂️. Vale la pena aclarar que estas reglas por si solas no aseguran un buen código. Otras reglas como las agrupadas en clean code u implementar patrones de diseño en casos concretos también ayudan a la mantenibilidad y escalabilidad del código. Al mismo tiempo que implementaciones demasiado meticulosas, puede llevar a complejizar demasiado un trabajo, o causar demoras innecesarias."
+    }), "\n", _jsx(_components.p, {
+      children: "Como siempre, hay que tener en cuenta el contexto y ver hasta qué nivel queremos desgranar una aplicación. Por ejemplo, la idea de “responsabilidad única” puede depender de que la interpretación que tenemos cada desarrollador. Por ejemplo, crear un servicio cuya única responsabilidad se cambiar el estado de una orden de compra. Esto puede parecer bastante bien en cierto contexto. Sin embargo, una aplicación de gestión de ventas el caso de uso “cambiar a estado aprobado” puede ser muy diferente del “cambiar a estado rechazado”. Las validaciones que necesitemos para ambos casos, o los eventos que podemos disparar luego de este cambio pueden ser muy diferentes. Tal vez una mejor aproximación sería una función con la única responsabilidad de aprobar ordenes de compras, y otra con la única responsabilidad de rechazarlos."
+    }), "\n", _jsx(_components.p, {
+      children: "Al final de cuentas nos encontramos que la aplicación de estos principios depende del contexto en que lo utilizamos y eso puede generar muchos dolores de cabezas."
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+8:["$","div",null,{"className":"slug_blogPageContainer__FU_0N","children":[["$","h1",null,{"className":"article-title","children":["Solid"," "]}],["$","p",null,{"className":"slug_date__9gvYI","children":["23 May 2022"," —"," ","7 min read"]}],["$","div",null,{"className":"content","children":["$","$L9",null,{"source":{"compiledSource":"$a","frontmatter":{"title":"Solid","published_at":"2022-05-23","excerpt":"Solid es un acrónimo nemotécnico de cinco principios reconocidos para generar código autodocumentado, flexible y mantenible. Estos cincos principios son una selección de principios publicados por Robert C. Martin, en un artículo del 2000 titulado Design Principles and Design Patterns.","cover_image":"path/to/where/image/is/stored"},"scope":{}}}]}]]}]
+7:null
