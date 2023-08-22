@@ -10,7 +10,7 @@ export default function Projects() {
   const projects = getProjects();
   return (
     <section className={styles.projectsContainer}>
-      <SectionTitle>Some Things I’ve Built</SectionTitle>
+      <SectionTitle referenceId='projects'>Some Things I’ve Built</SectionTitle>
         {projects.map(project => {
         if (project.show && project.main) {
           return <MainProject key={project.id} project={project} ></MainProject>

@@ -6,7 +6,7 @@ import { SectionTitle } from '../atoms/section-title/SectionTitle'
 export default function About() {
   return (
     <section className={styles.aboutSection} >
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle referenceId='about'>About Me</SectionTitle>
       <div >
         <div className={styles.textContainer}>
           <p>
