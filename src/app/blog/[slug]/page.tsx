@@ -3,6 +3,7 @@ import React from 'react'
 import { MdxContent } from './MdxContent';
 import { getArticleBySlug } from '@/src/application/article.service';
 import styles from './slug.module.scss' 
+import NavBar from '@/src/components/navBar/NavBar';
 
 
 export default async function BlogsPage({params} :any) {
@@ -10,12 +11,14 @@ export default async function BlogsPage({params} :any) {
   const article = await getArticle(params.slug)
 
   if (article === null){
-    <h1>NOT FOUND</h1>
+    return <h1>NOT FOUND</h1>
   }
 
   const {metadata, serialized} = article!;
 
   return (
+    <>
+    <NavBar></NavBar>
       <div className={styles.blogPageContainer}>
         <h1 className="article-title">{metadata.title} </h1>
         <p className={styles.date}>
@@ -28,6 +31,7 @@ export default async function BlogsPage({params} :any) {
 
         </div>
       </div>
+      </>
   )
 }
 

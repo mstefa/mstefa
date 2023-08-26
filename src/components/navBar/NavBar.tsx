@@ -3,6 +3,8 @@ import React, { useEffect } from 'react'
 import styles from './navBar.module.scss'
 import Image from 'next/image'
 import { Icon } from '../icon/Icon';
+import Link from 'next/link'
+
 
 export default function NavBar() {
   const [hideNavBar, setHideNavBar] = React.useState(false);
@@ -31,18 +33,22 @@ export default function NavBar() {
 
     <nav className={ hideNavBar? styles.navBarHidden: styles.navBar}>
       <div className={styles.logoDiv}>
-      <a href='#home'> 
+      {/* <a href='#home'> 
         <Image className={ styles.logo}id="logo" width="40" height="35" alt="Matias Stefanutti" src='./images/Icon2Small.png' />
-      </a>
+      </a> */}
+      <Link href="/"> 
+        <Image className={ styles.logo}id="logo" width="40" height="35" alt="Matias Stefanutti" src='./images/Icon2Small.png' />
+      </Link> 
       </div>
 
       <div className={isNavExpanded ? styles.navigationMenuExpanded : styles.navigationMenuHiden}>
         <ul>
           {/* <li> Home </li> */}
-          <li  > <a href='#about'>About me</a> </li>
-          <li> <a href='#jobs'>Work</a> </li>
-          <li> <a href='#projects'>Projects</a> </li>
-          <li> <a href='#contact'>Contact</a></li>
+          <li  > <a href='/#about'>About me</a> </li>
+          <li> <a href='/#jobs'>Work</a> </li>
+          <li> <a href='/#projects'>Projects</a> </li>
+          <li> <a href='/#contact'>Contact</a></li>
+          <li> <Link href="/blog">Blog</Link></li>
         </ul> 
       </div>
 
