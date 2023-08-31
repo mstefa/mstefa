@@ -1,0 +1,40 @@
+.container {
+  padding: 6rem 0rem 10rem 0rem;
+  margin: auto;
+  max-width: var(--maxWidth);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+  width: 50vw;
+
+
+  h1 {
+    font-size: var(--fztitle);
+    color: var(--fg-default);
+  }
+
+  h3 {
+    margin: 0 0 1rem 0;
+  }
+
+  span {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    color: var(--fg-default);
+  }
+
+
+  @media (max-width: 850px) {
+    height: 55vh;
+    width: 80vw;
+    padding: 5rem 0rem 8rem 1rem;
+  }
+
+  @media (max-width: 450px) {
+    height: 65vh;
+
+    padding: 5rem 0rem 8rem 0rem;
+
+  }
+}

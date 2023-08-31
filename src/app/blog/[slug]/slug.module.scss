@@ -3,8 +3,20 @@
   max-width: var(--max-width);
   width: 80vh;
 
+  .articleHeader{
+    height: 20vh;
+    margin: 5rem 0 ;
+  }
+
+  .date {
+    color: var(--fg-subtle);
+    font-size: var(--fzxs);
+    border-bottom: var(--fg-subtle) 0.1rem;
+  }
+
   h1 {
     font-size: var(--fzheading);
+    margin: 2rem 0 ;
   }
 
   p {
@@ -30,8 +42,4 @@
   }
 }
 
-.date {
-  color: var(--fg-subtle);
-  font-size: var(--fzxs);
-  border-bottom: var(--fg-subtle) 0.1rem;
-}
+
