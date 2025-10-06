@@ -17,20 +17,26 @@ export default async function BlogsPage({ params }: any) {
   return (
     <>
       <BlogNavBar></BlogNavBar>
-
-      <div className={styles.blogPageContainer}>
-        <div className={styles.articleHeader}>
-          <h1>{metadata.title} </h1>
-          <p className={styles.date}>
-            {metadata.publishedAt} &mdash; {metadata.readTime}
-          </p>
-        </div>
-        <div className="content">
-          <MdxContent source={serialized} />
-        </div>
-      </div>
+      <h1>Under Construction</h1>
     </>
   );
+  // return (
+  //   <>
+  //     <BlogNavBar></BlogNavBar>
+
+  //     <div className={styles.blogPageContainer}>
+  //       <div className={styles.articleHeader}>
+  //         <h1>{metadata.title} </h1>
+  //         <p className={styles.date}>
+  //           {metadata.publishedAt} &mdash; {metadata.readTime}
+  //         </p>
+  //       </div>
+  //       <div className="content">
+  //         <MdxContent source={serialized} />
+  //       </div>
+  //     </div>
+  //   </>
+  // );
 }
 
 export async function generateStaticParams() {

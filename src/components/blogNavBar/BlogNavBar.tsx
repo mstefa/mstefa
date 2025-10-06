@@ -53,7 +53,7 @@ export default function BlogNavBar() {
           {/* <li> Home </li> */}
           <li>
             {" "}
-            <a href="/#about">About me</a>{" "}
+            <Link href="/#about">About me</Link>{" "}
           </li>
           <li>
             {" "}
