@@ -1,10 +1,49 @@
 [
   {
+    "id": 6,
+    "company": "Viaplay Group",
+    "title": "Software Engineer",
+    "companyWebSite": "https://viaplay.com",
+    "timeRange": "06-2024 -> 09-2025",
+    "shortDescription": "Typescript Backend Developer creating high-quality platforms",
+    "itemsDescriptions": [
+      {
+        "name": "Developed scalable serverless architectures on AWS Lambda, optimising for efficiency and performance."
+      },
+      {
+        "name": "Designed and maintained secure microservices in TypeScript and Node.js for reliable payment processing."
+      },
+      {
+        "name": "Led cross-functional collaboration with product, design, and analytics teams to improve user activation flows."
+      },
+      {
+        "name": "Automated deployments using Infrastructure as Code (IaC) to streamline release processes and enhance reliability."
+      },
+      {
+        "name": "Ensured security and compliance with industry standards like PCI DSS for safeguarding payment data."
+      }
+    ],
+    "usedSkills": [
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "Lambda"
+      },
+      {
+        "name": "AWS"
+      }
+    ]
+  },
+  {
     "id": 5,
     "company": "InnoIT Consulting",
     "title": "SSr Backend Developer",
     "companyWebSite": "https://www.linkedin.com/company/innoit-consulting/",
-    "timeRange": "02-2022 -> 03-2023",
+    "timeRange": "02-2022 -> 06-2024",
     "shortDescription": "Typescript Backend Developer creating high-quality platforms",
     "itemsDescriptions": [
       {
