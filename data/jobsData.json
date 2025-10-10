@@ -5,22 +5,24 @@
     "title": "Software Engineer",
     "companyWebSite": "https://viaplay.com",
     "timeRange": "06-2024 -> 09-2025",
+    "showOnCv": true,
+    "showOnWeb": true,
     "shortDescription": "Typescript Backend Developer creating high-quality platforms",
     "itemsDescriptions": [
       {
-        "name": "Developed scalable serverless architectures on AWS Lambda, optimising for efficiency and performance."
+        "description": "Developed scalable serverless architectures on AWS Lambda, optimizing for efficiency and performance."
       },
       {
-        "name": "Designed and maintained secure microservices in TypeScript and Node.js for reliable payment processing."
+        "description": "Designed and maintained secure microservices in TypeScript and Node.js for reliable payment processing."
       },
       {
-        "name": "Led cross-functional collaboration with product, design, and analytics teams to improve user activation flows."
+        "description": "Led cross-functional collaboration with product, design, and analytics teams to improve user activation flows."
       },
       {
-        "name": "Automated deployments using Infrastructure as Code (IaC) to streamline release processes and enhance reliability."
+        "description": "Automated deployments using Infrastructure as Code (IaC) to streamline release processes and enhance reliability."
       },
       {
-        "name": "Ensured security and compliance with industry standards like PCI DSS for safeguarding payment data."
+        "description": "Ensured security and compliance with industry standards like PCI DSS for safeguarding payment data."
       }
     ],
     "usedSkills": [
@@ -44,16 +46,18 @@
     "title": "SSr Backend Developer",
     "companyWebSite": "https://www.linkedin.com/company/innoit-consulting/",
     "timeRange": "02-2022 -> 06-2024",
+    "showOnCv": true,
+    "showOnWeb": true,
     "shortDescription": "Typescript Backend Developer creating high-quality platforms",
     "itemsDescriptions": [
       {
-        "name": "Backend Developer with Typescript, creating high-quality platforms for a seamless user experience."
+        "description": "Backend Developer with Typescript, creating high-quality platforms for a seamless user experience."
       },
       {
-        "name": "Improving customer relationships through innovative platforms."
+        "description": "Improving customer relationships through innovative platforms."
       },
       {
-        "name": "Improving platform quality and performance for an efficient user experience."
+        "description": "Improving platform quality and performance for an efficient user experience."
       }
     ],
     "usedSkills": [
@@ -77,16 +81,18 @@
     "title": "SSr Backend Developer",
     "companyWebSite": "https://www.settlenetwork.com/",
     "timeRange": "02-2022 -> 03-2023",
+    "showOnCv": true,
+    "showOnWeb": true,
     "shortDescription": "Member of the backend team of a fintech and crypto project",
     "itemsDescriptions": [
       {
-        "name": "Build and develop a new fiat and crypto wallet project as a Backend Developer, utilizing JavaScript and Typescript, and taking on modular responsibility for backend development"
+        "description": "Build and develop a new fiat and crypto wallet project as a Backend Developer, utilizing JavaScript and Typescript, and taking on modular responsibility for backend development"
       },
       {
-        "name": "Work in a small start-up environment, and an eagerness to take on challenges such as reducing infrastructure costs and learning about crypto technologies"
+        "description": "Work in a small start-up environment, and an eagerness to take on challenges such as reducing infrastructure costs and learning about crypto technologies"
       },
       {
-        "name": "Collaborate with a team of developers to deliver high-quality backend systems, ensuring seamless functionality of the fiat and crypto wallet project."
+        "description": "Collaborate with a team of developers to deliver high-quality backend systems, ensuring seamless functionality of the fiat and crypto wallet project."
       }
     ],
     "usedSkills": [
@@ -107,19 +113,21 @@
     "title": "Software Engineer Analyst",
     "companyWebSite": "https://mercadolibre.com/",
     "timeRange": "05-2021 -> 02-2022",
+    "showOnCv": true,
+    "showOnWeb": true,
     "shortDescription": "Part of the CX-IT team",
     "itemsDescriptions": [
       {
-        "name": "Replacing the old legacy monolith chat application services with a micro-services structure"
+        "description": "Replacing the old legacy monolith chat application services with a micro-services structure"
       },
       {
-        "name": "Mantining communication channels applications, such as phone call and Whatsapp integrations"
+        "description": "Mantining communication channels applications, such as phone call and Whatsapp integrations"
       },
       {
-        "name": "Manage and implement changes to improve resiliency"
+        "description": "Manage and implement changes to improve resiliency"
       },
       {
-        "name": "Keep updated infrastructure in AWS stacks"
+        "description": "Keep updated infrastructure in AWS stacks"
       }
     ],
     "usedSkills": [
@@ -143,13 +151,15 @@
     "title": "Teaching Assistant",
     "companyWebSite": "https://www.soyhenry.com/",
     "timeRange": "05-2021 -> 07-2021",
+    "showOnCv": false,
+    "showOnWeb": true,
     "shortDescription": "Part-time",
     "itemsDescriptions": [
       {
-        "name": "Supporting a designated group of students undertaking teacher designated activities"
+        "description": "Supporting a designated group of students undertaking teacher designated activities"
       },
       {
-        "name": "Promote their own continuous professional development, and engage enthusiastically with the processes of become a developer."
+        "description": "Promote their own continuous professional development, and engage enthusiastically with the processes of become a developer."
       }
     ],
     "usedSkills": [
@@ -173,16 +183,18 @@
     "title": "Aeronautical Engineer",
     "companyWebSite": "",
     "timeRange": "2012 -> 2020",
+    "showOnCv": true,
+    "showOnWeb": true,
     "shortDescription": "Full-time",
     "itemsDescriptions": [
       {
-        "name": "working in main players of industries like Siemens and Airbus"
+        "description": "working in main players of industries like Siemens and Airbus"
       },
       {
-        "name": "Leading multidisciplinary team on differents sites"
+        "description": "Leading multidisciplinary team on differents sites"
       },
       {
-        "name": "Negotiations with customers and contractors"
+        "description": "Negotiations with customers and contractors"
       }
     ],
     "usedSkills": [

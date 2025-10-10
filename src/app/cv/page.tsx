@@ -2,15 +2,20 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import styles from "./page.module.scss";
+import { getJobs } from "@/src/infrastructure/JobRepository";
+import { getEducation } from "@/src/infrastructure/EducationRepository";
+
+const experience = getJobs();
+const education = getEducation();
 
 const cvData = {
-  name: "John Doe",
+  name: "Matias Stefanutti",
   title: "Software Engineer",
   contact: {
-    email: "john.doe@email.com",
-    phone: "+1 234 567 8901",
-    location: "Cambridge, MA, USA",
-    linkedin: "linkedin.com/in/johndoe",
+    email: "mstefanutti24@gmail.com",
+    phone: "+54 351 5552617",
+    location: "Buenos Aires, Argentina",
+    linkedin: "linkedin.com/in/matiasstefanutti",
   },
   education: [
     {
@@ -24,27 +29,7 @@ const cvData = {
       year: "2020",
     },
   ],
-  experience: [
-    {
-      role: "Senior Software Engineer",
-      company: "TechCorp",
-      years: "2022–Present",
-      details: [
-        "Lead development of scalable web applications.",
-        "Mentored junior engineers.",
-      ],
-    },
-    {
-      role: "Software Engineer",
-      company: "InnovateX",
-      years: "2020–2022",
-      details: [
-        "Built RESTful APIs and React frontends.",
-        "Collaborated with cross-functional teams.",
-      ],
-    },
-  ],
-  skills: ["TypeScript", "React", "Node.js", "Python", "SQL"],
+  skills: ["TypeScript", "React", "Node.js", "SQL"],
 };
 
 export default function CvPage() {
@@ -77,34 +62,52 @@ export default function CvPage() {
         </header>
 
         <section className={styles.section}>
-          <h3 className={styles.h3}>Education</h3>
-          <ul className={styles.ul}>
-            {cvData.education.map((edu, i) => (
-              <li key={i} className={styles.li}>
-                <strong>{edu.degree}</strong>, {edu.institution}
-                <span className={styles.span}>{edu.year}</span>
-              </li>
-            ))}
-          </ul>
+          <p className={styles.mainDescription}>
+            As a Software Engineer, I prioritize creating robust and valuable
+            software, specializing in the development of scalable and
+            intelligent systems. I have experience leading high-performance
+            teams developing full-stack web applications and building projects
+            with NodeJS, TypeScript, Go, Java, and React. I am committed to
+            continual growth and embrace best practices such as TDD, CI/CD,
+            Hexagonal architecture, and Agile methodologies, while actively
+            exploring and integrating cutting-edge technologies, including
+            Generative AI. I thrive on challenges and am dedicated to fostering
+            an environment of innovation and excellence.
+          </p>
         </section>
 
         <section className={styles.section}>
           <h3 className={styles.h3}>Experience</h3>
-          {cvData.experience.map((exp, i) => (
-            <div key={i} className={styles.div}>
-              <div>
-                <strong>{exp.role}</strong>, {exp.company}
-                <span className={styles.span}>{exp.years}</span>
+          {experience
+            .filter((exp) => exp.showOnCv)
+            .map((exp, i) => (
+              <div key={i} className={styles.div}>
+                <div>
+                  <strong>{exp.title}</strong>, {exp.company}
+                  <span className={styles.span}>{exp.timeRange}</span>
+                </div>
+                <ul className={styles.ul}>
+                  {exp.itemsDescriptions.map((d, j) => (
+                    <li key={j} className={styles.li}>
+                      - {d.description}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className={styles.ul}>
-                {exp.details.map((d, j) => (
-                  <li key={j} className={styles.li}>
-                    {d}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            ))}
+        </section>
+
+        <section className={styles.section}>
+          <h3 className={styles.h3}>Education</h3>
+          <ul className={styles.ul}>
+            {education.map((edu, i) => (
+              <li key={i} className={styles.li}>
+                <strong>{edu.degree}</strong>, {edu.institution}
+                <span className={styles.span}>{edu.year}</span>
+                <p>{edu.note}</p>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className={styles.section}>

@@ -1,6 +1,6 @@
 .main {
   font-family: Georgia, serif;
-  max-width: 700px;
+  max-width: 800px;
   margin: 40px auto;
   background: #fff;
   padding: 40px;
@@ -25,6 +25,10 @@
   font-size: 1.2rem;
 }
 
+.mainDescription {
+  font-style: italic;
+}
+
 .div {
   margin-top: 12px;
   font-size: 1rem;
@@ -47,11 +51,35 @@
 
 .li {
   margin-bottom: 8px;
+  p {
+    margin: 0;
+    font-style: italic;
+  }
 }
 
 .span {
   float: right;
   color: #555;
+}
+
+.downloadButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 24px;
+  background-color: #900;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #700;
 }
 
 @media print {
