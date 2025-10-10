@@ -32,6 +32,10 @@ const cvData = {
   skills: ["TypeScript", "React", "Node.js", "SQL"],
 };
 
+//TODO: terminar de agregar educacion y skills al json
+// revisar los trabajos que no quiero que se vean en el cv pero si en la web y viceversa
+// agregar skills al json como en el CV al este CV
+
 export default function CvPage() {
   const contentRef = useRef<HTMLDivElement>(null);
 
