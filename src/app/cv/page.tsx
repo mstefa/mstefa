@@ -4,33 +4,12 @@ import { useReactToPrint } from "react-to-print";
 import styles from "./page.module.scss";
 import { getJobs } from "@/src/infrastructure/JobRepository";
 import { getEducation } from "@/src/infrastructure/EducationRepository";
+import { getPersonalInfo } from "@/src/infrastructure/PersonaInfoRepository";
 
 const experience = getJobs();
 const education = getEducation();
 
-const cvData = {
-  name: "Matias Stefanutti",
-  title: "Software Engineer",
-  contact: {
-    email: "mstefanutti24@gmail.com",
-    phone: "+54 351 5552617",
-    location: "Buenos Aires, Argentina",
-    linkedin: "linkedin.com/in/matiasstefanutti",
-  },
-  education: [
-    {
-      degree: "M.S. Computer Science",
-      institution: "Harvard University",
-      year: "2022",
-    },
-    {
-      degree: "B.S. Computer Science",
-      institution: "Harvard University",
-      year: "2020",
-    },
-  ],
-  skills: ["TypeScript", "React", "Node.js", "SQL"],
-};
+const cvData = getPersonalInfo();
 
 //TODO: terminar de agregar educacion y skills al json
 // revisar los trabajos que no quiero que se vean en el cv pero si en la web y viceversa
