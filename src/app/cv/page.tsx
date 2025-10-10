@@ -48,45 +48,7 @@ const cvData = {
 };
 
 function downloadPDF() {
-  const doc = new jsPDF();
-  doc.text("Curriculum Vitae", 10, 10);
-  doc.text(`Name: ${cvData.name}`, 10, 20);
-  doc.text(`Title: ${cvData.title}`, 10, 30);
-  doc.text(
-    `Contact: ${cvData.contact.email}, ${cvData.contact.phone}, ${cvData.contact.location}`,
-    10,
-    40,
-  );
-  doc.text(`LinkedIn: ${cvData.contact.linkedin}`, 10, 50);
-
-  doc.text("Education:", 10, 60);
-  cvData.education.forEach((edu, index) => {
-    doc.text(
-      `${edu.degree}, ${edu.institution} (${edu.year})`,
-      10,
-      70 + index * 10,
-    );
-  });
-
-  doc.text("Experience:", 10, 90);
-  let experienceOffset = 100;
-  cvData.experience.forEach((exp) => {
-    doc.text(
-      `${exp.role}, ${exp.company} (${exp.years})`,
-      10,
-      experienceOffset,
-    );
-    experienceOffset += 10;
-    exp.details.forEach((detail) => {
-      doc.text(`- ${detail}`, 15, experienceOffset);
-      experienceOffset += 10;
-    });
-  });
-
-  doc.text("Skills:", 10, experienceOffset);
-  doc.text(cvData.skills.join(", "), 10, experienceOffset + 10);
-
-  doc.save("cv.pdf");
+  console.log("working on it");
 }
 
 export default function CvPage() {
