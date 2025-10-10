@@ -4,6 +4,8 @@ export default interface JobData {
   title: string,
   companyWebSite: string,
   timeRange: string,
+  showOnCv: boolean,
+  showOnWeb: boolean,
   shortDescription: string,
   itemsDescriptions: jobItemsDescriptions[],
   usedSkills: techSkills[]
@@ -14,5 +16,5 @@ interface techSkills {
 }
 
 interface jobItemsDescriptions {
-  name: string
+  description: string
 }

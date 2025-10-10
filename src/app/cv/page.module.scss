@@ -1,0 +1,115 @@
+.main {
+  font-family: Georgia, serif;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.header {
+  border-bottom: 2px solid #900;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #900;
+}
+
+.h2 {
+  margin: 8px 0 0 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.mainDescription {
+  font-style: italic;
+}
+
+.div {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.h3 {
+  color: #900;
+  margin-bottom: 0px;
+  margin-top:1px
+}
+
+.ul {
+  list-style: none;
+  break-inside: avoid;
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 8px;
+  p {
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+.span {
+  float: right;
+  color: #555;
+}
+
+.downloadButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 24px;
+  background-color: #900;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #700;
+}
+
+@media print {
+  .header {
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+}
+
+.h3 {
+  margin-bottom: 4px;
+}
+
+.ul {
+  margin-bottom: 2px;
+  margin-top: 1px;
+}
+
+.li {
+  margin-bottom: 2px;
+}
+
+.downloadButton {
+    display: none;
+  }
+
+  .main {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+}

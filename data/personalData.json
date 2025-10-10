@@ -1,0 +1,26 @@
+{
+  "name": "Matias Stefanutti",
+  "title": "Software Engineer",
+  "contact": {
+    "email": "mstefanutti24@gmail.com",
+    "phone": "+54 351 5552617",
+    "location": "Buenos Aires, Argentina",
+    "linkedin": "linkedin.com/in/matiasstefanutti",
+    "github": "mstefa",
+    "website": "mstefanutti.com",
+    "twitter": "mstefanutti"
+  },
+  "technologies": [
+    "TypeScript",
+    "GoLang",
+    "Java",
+    "React",
+    "Node.js",
+    "SQL"
+  ],
+  "skills": [
+    "Native Spanish, full professional English proficiency,  full professional French proficiency",
+    "Experience in mentoring, tutoring, and supporting newcomers in their learning and professional development",
+    "Experience in other industries includes roles in mechanical engineering and team leadership"
+  ]
+}
