@@ -11,15 +11,12 @@ const education = getEducation();
 
 const cvData = getPersonalInfo();
 
-//TODO: terminar de agregar educacion y skills al json
-// revisar los trabajos que no quiero que se vean en el cv pero si en la web y viceversa
-// agregar skills al json como en el CV al este CV
-
 export default function CvPage() {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const handlePrint = useReactToPrint({
     contentRef,
+    documentTitle: `${cvData.name}-CV`,
   });
 
   return (
@@ -72,7 +69,7 @@ export default function CvPage() {
                 <ul className={styles.ul}>
                   {exp.itemsDescriptions.map((d, j) => (
                     <li key={j} className={styles.li}>
-                      - {d.description}
+                      · {d.description}
                     </li>
                   ))}
                 </ul>
@@ -95,7 +92,13 @@ export default function CvPage() {
 
         <section className={styles.section}>
           <h3 className={styles.h3}>Skills</h3>
-          <div>{cvData.skills.join(" · ")}</div>
+          <ul className={styles.ul}>
+            {cvData.skills.map((d, j) => (
+              <li key={j} className={styles.li}>
+                · {d}
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
       <button className={styles.downloadButton} onClick={handlePrint}>

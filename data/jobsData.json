@@ -51,13 +51,10 @@
     "shortDescription": "Typescript Backend Developer creating high-quality platforms",
     "itemsDescriptions": [
       {
-        "description": "Backend Developer with Typescript, creating high-quality platforms for a seamless user experience."
+        "description": "Led the development of a serverless AWS-based configurator process using TypeScript and KV database."
       },
       {
-        "description": "Improving customer relationships through innovative platforms."
-      },
-      {
-        "description": "Improving platform quality and performance for an efficient user experience."
+        "description": "Contributed to global product recommendations, reducing costs and enhancing scalability"
       }
     ],
     "usedSkills": [
@@ -86,13 +83,10 @@
     "shortDescription": "Member of the backend team of a fintech and crypto project",
     "itemsDescriptions": [
       {
-        "description": "Build and develop a new fiat and crypto wallet project as a Backend Developer, utilizing JavaScript and Typescript, and taking on modular responsibility for backend development"
+        "description": "Worked on a new project to create a fiat and crypto wallet, using JavaScript and TypeScript."
       },
       {
-        "description": "Work in a small start-up environment, and an eagerness to take on challenges such as reducing infrastructure costs and learning about crypto technologies"
-      },
-      {
-        "description": "Collaborate with a team of developers to deliver high-quality backend systems, ensuring seamless functionality of the fiat and crypto wallet project."
+        "description": "Achieved goals of reducing infrastructure costs and learning about new crypto technologies in a startup environment."
       }
     ],
     "usedSkills": [
@@ -118,16 +112,10 @@
     "shortDescription": "Part of the CX-IT team",
     "itemsDescriptions": [
       {
-        "description": "Replacing the old legacy monolith chat application services with a micro-services structure"
+        "description": "Maintained CRM channels, including phone and messaging services, built with Java."
       },
       {
-        "description": "Mantining communication channels applications, such as phone call and Whatsapp integrations"
-      },
-      {
-        "description": "Manage and implement changes to improve resiliency"
-      },
-      {
-        "description": "Keep updated infrastructure in AWS stacks"
+        "description": "Replaced a legacy monolith chat application with a microservices structure, primarily using Go."
       }
     ],
     "usedSkills": [
