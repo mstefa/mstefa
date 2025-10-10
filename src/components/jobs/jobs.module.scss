@@ -114,7 +114,8 @@
 
   &:hover,
   &:focus {
-    background-color: var(--darkGray);
+    color: var(--lightTel);
+    background-color: rgba(var(--darkGray-rgb), 0.8);
   }
 
   &Active {

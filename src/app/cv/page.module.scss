@@ -1,0 +1,55 @@
+.main {
+  font-family: Georgia, serif;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.header {
+  border-bottom: 2px solid #900;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #900;
+}
+
+.h2 {
+  margin: 8px 0 0 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.div {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.h3 {
+  color: #900;
+  margin-bottom: 8px;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 8px;
+}
+
+.span {
+  float: right;
+  color: #555;
+}
