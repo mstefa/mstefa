@@ -53,3 +53,15 @@
   float: right;
   color: #555;
 }
+
+@media print {
+  .downloadButton {
+    display: none;
+  }
+
+  .main {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+}

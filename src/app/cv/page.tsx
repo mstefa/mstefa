@@ -1,6 +1,6 @@
 "use client";
-import { jsPDF } from "jspdf";
-import React from "react";
+import React, { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 import styles from "./page.module.scss";
 
 const cvData = {
@@ -47,14 +47,16 @@ const cvData = {
   skills: ["TypeScript", "React", "Node.js", "Python", "SQL"],
 };
 
-function downloadPDF() {
-  console.log("working on it");
-}
-
 export default function CvPage() {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const handlePrint = useReactToPrint({
+    contentRef,
+  });
+
   return (
     <>
-      <main className={styles.main}>
+      <main className={styles.main} ref={contentRef}>
         <header className={styles.header}>
           <h1 className={styles.h1}>{cvData.name}</h1>
           <h2 className={styles.h2}>{cvData.title}</h2>
@@ -110,7 +112,7 @@ export default function CvPage() {
           <div>{cvData.skills.join(" · ")}</div>
         </section>
       </main>
-      <button className={styles.downloadButton} onClick={downloadPDF}>
+      <button className={styles.downloadButton} onClick={handlePrint}>
         Download CV as PDF
       </button>
     </>
