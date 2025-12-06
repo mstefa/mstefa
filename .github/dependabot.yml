@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Maintain dependencies for npm (Node.js/JavaScript/Next.js)
+  - package-ecosystem: "npm"
+    # Location of package manifests (package.json and package-lock.json/yarn.lock/pnpm-lock.yaml)
+    # The `/` means the root of the repository.
+    directory: "/"
+    # Schedule for checking updates
+    schedule:
+      interval: "weekly" # Options: daily, weekly, monthly
+    # Add labels to the pull requests opened by Dependabot
+    labels:
+      - "dependencies"
+      - "npm"
