@@ -5,8 +5,9 @@ import { getArticleBySlug } from "@/src/application/article.service";
 import styles from "./slug.module.scss";
 import BlogNavBar from "@/src/components/blogNavBar/BlogNavBar";
 
-export default async function BlogsPage({ params }: any) {
-  const article = await getArticle(params.slug);
+export default async function BlogsPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const article = await getArticle(slug);
 
   if (article === null) {
     return <h1>NOT FOUND</h1>;
