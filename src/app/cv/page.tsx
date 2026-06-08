@@ -44,15 +44,16 @@ export default function CvPage() {
         <section className={styles.section}>
           <p className={styles.mainDescription}>
             As a Software Engineer, I prioritize creating robust and valuable
-            software, specializing in the development of scalable and
-            intelligent systems. I have experience leading high-performance
-            teams developing full-stack web applications and building projects
-            with NodeJS, TypeScript, Go, Java, and React. I am committed to
-            continual growth and embrace best practices such as TDD, CI/CD,
-            Hexagonal architecture, and Agile methodologies, while actively
-            exploring and integrating cutting-edge technologies, including
-            Generative AI. I thrive on challenges and am dedicated to fostering
-            an environment of innovation and excellence.
+            software, specializing in the development of scalable systems and AI
+            agents. I have experience leading high-performance teams developing
+            full-stack web applications and building projects with NodeJS,
+            TypeScript, Go, Java, and React. I am committed to continual growth
+            and embrace best practices such as TDD, CI/CD, Hexagonal
+            architecture, and Agile methodologies. By actively leveraging
+            AI-driven development tools to optimize my workflow, and integrating
+            cutting-edge technologies like Generative AI, I thrive on challenges
+            and am dedicated to fostering an environment of innovation and
+            excellence.
           </p>
         </section>
 

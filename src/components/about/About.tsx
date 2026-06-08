@@ -13,11 +13,11 @@ export default function About() {
             I&apos;m a passionate Software Engineer who loves building platforms
             that truly stand out and deliver great user experiences. My main
             focus is backend development, where I&apos;ve worked with{" "}
-            <b>TypeScript</b>, <b>GoLang</b>, and <b>Java </b> to design and
-            scale modern microservices. On the frontend, I enjoy crafting clean,
-            engaging interfaces with React. I&apos;m also experienced and
-            excited about working with AI, exploring how intelligent systems can
-            enhance products and make them smarter.
+            <b>TypeScript</b>, <b>GoLang</b>, and <b>Java</b> to design, scale,
+            and orchestrate modern microservices and <b>AI agents</b>. On the
+            frontend, I enjoy crafting clean, engaging interfaces with React.
+            I&apos;m driven by the new era of intelligent systems, exploring how
+            autonomous agents and AI can enhance products and make them smarter.
           </p>
           <p>
             Above all, I&apos;m driven to push platform quality and performance
@@ -25,10 +25,10 @@ export default function About() {
             solutions.
           </p>
           <p>
-            From my root as an aeronautical engineer, my journey has been a
+            From my roots as an aeronautical engineer, my journey has been a
             transformative one, molding me into a versatile Software Engineer.
-            On my journey, I got the chance to dive into the role of a Teaching
-            Assistant, mentoring emerging talents and guiding into the
+            Along the way, I had the chance to dive into the role of a Teaching
+            Assistant, mentoring emerging talents and guiding them into the
             development world. My focus on effective leadership and ability to
             adapt to various cultures have consistently led to successful
             outcomes across a wide range of domains.
