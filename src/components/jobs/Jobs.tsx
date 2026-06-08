@@ -83,7 +83,7 @@ export default function Jobs() {
               return (
                 <div
                   className={styles.tabPanel}
-                  key={title}
+                  key={e.id}
                   id={`panel-${i}`}
                   role="tabpanel"
                   // tabIndex={activeTabId === i ? '0' : '-1'}

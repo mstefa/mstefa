@@ -1,5 +1,49 @@
 [
   {
+    "id": 7,
+    "company": "Mercado Libre",
+    "title": "Software Engineer",
+    "companyWebSite": "https://mercadolibre.com",
+    "timeRange": "01-2025 -> Present",
+    "showOnCv": true,
+    "showOnWeb": true,
+    "shortDescription": "Software Engineer developing user-centric GenAI agents and MCP infrastructure.",
+    "itemsDescriptions": [
+      {
+        "description": "Lead a cross-functional team responsible for virtual assistants and GenAI agents in Customer Experience (CX), aligning system architecture and technical strategy to deliver high-quality user experiences."
+      },
+      {
+        "description": "Design and develop autonomous AI agents utilizing GenAI tools to solve user problems and automate critical workflows, publishing them as reusable skills in the internal marketplace."
+      },
+      {
+        "description": "Build resilient Model Context Protocol (MCP) servers in Go to power user-facing agent solutions and enhance automated problem resolution."
+      },
+      {
+        "description": "Develop robust backend infrastructure using Go, applying Clean Architecture and SOLID principles with a focus on observability, SRE practices, and GraphQL/REST API integration."
+      },
+      {
+        "description": "Develop LLM agents for CX, integrating data sources with a prompt-first approach to enable autonomous assistance, helping users troubleshoot and resolve issues efficiently."
+      }
+    ],
+    "usedSkills": [
+      {
+        "name": "Go"
+      },
+      {
+        "name": "MCP"
+      },
+      {
+        "name": "AI Agents"
+      },
+      {
+        "name": "Generative AI"
+      },
+      {
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
     "id": 6,
     "company": "Viaplay Group",
     "title": "Software Engineer",
