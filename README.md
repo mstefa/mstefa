@@ -2,7 +2,7 @@
 
 Hi there 👋!
 
-my name is Matías Stefanutti and I´m a **Software Engineer**. I care about producing software that is both, durable and useful. I develop full-stack web applications, mostly with JavaScript and Node.js. I have experience building projects with TypeScript, Golang, Java and React.
+my name is Matías Stefanutti and I'm a **Software Engineer and Project Leader**. I care about producing software that is durable, resilient, and useful. Currently, I lead cross-functional teams at Mercado Libre focused on virtual assistants, Generative AI agents, and Model Context Protocol (MCP) infrastructure in Go, building highly scalable backend architectures and autonomous agent workflows.
 
 I would like to have the opportunity where I can add value from my experience facing new challenges with special interest on large volumes of data and high scalability rates. 
 
@@ -12,7 +12,7 @@ I would like to have the opportunity where I can add value from my experience fa
 
 - **email:** [ mstefanutti24@gmail.com](mailto:mstefanutti24@gmail.com)
 
-- **Portfolio:** [ mstefa.github.io/mstefa/](https://mstefa.github.io/mstefa/)
+- **Portfolio:** [ mstefanutti.com](https://mstefanutti.com)
 
 - **LinkedIn:** [ /matiasstefanutti </P> ](https://www.linkedin.com/in/matiasstefanutti/)
 
@@ -22,14 +22,15 @@ I would like to have the opportunity where I can add value from my experience fa
 
 ## Skills
 
-- NodeJs
-- TypeScript
 - GoLang
+- NodeJs & TypeScript
+- Model Context Protocol (MCP) & AI Agents
+- Generative AI
+- Clean Architecture / Hexagonal Architecture
 - Java
 - React
 - SQL and NoSQL
-- Kubernetes
-- hexagonal architecture / DDD
+- Kubernetes & Docker
 - TDD
 
 
