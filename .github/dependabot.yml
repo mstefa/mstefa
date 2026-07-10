@@ -1,14 +1,29 @@
 version: 2
 updates:
-  # Maintain dependencies for npm (Node.js/JavaScript/Next.js)
+  # 1. Project Dependencies (npm) at root
   - package-ecosystem: "npm"
-    # Location of package manifests (package.json and package-lock.json/yarn.lock/pnpm-lock.yaml)
-    # The `/` means the root of the repository.
     directory: "/"
-    # Schedule for checking updates
     schedule:
-      interval: "weekly" # Options: daily, weekly, monthly
-    # Add labels to the pull requests opened by Dependabot
-    labels:
-      - "dependencies"
-      - "npm"
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+    open-pull-requests-limit: 2
+    # Group minor and patch updates to avoid PR noise and bundle dependency updates together
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    cooldown:
+      default-days: 1
+
+  # 2. GitHub Actions Workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 2
+    cooldown:
+      default-days: 1
