@@ -32,7 +32,7 @@
       ],
       "img": "./images/pokemon.gif",
       "repository": "https://github.com/mstefa/PokeApp",
-      "page": "https://poke-app-blue.vercel.app/",
+      "page": "https://pokeapp-client.mstefanutti24-cf.workers.dev/",
       "year": 2021,
       "main": true,
       "show": true
