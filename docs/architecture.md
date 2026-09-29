@@ -10,7 +10,7 @@ Dependencies only point **inward**. The core domain layer has no knowledge of an
 graph TD
     %% Define layers
     Presentation[Presentation Layer / Next.js Pages & Components]
-    Infrastructure[Infrastructure Layer / MDX, File Mappings]
+    Infrastructure[Infrastructure Layer / JSON Data, File Mappings]
     Application[Application Layer / Services]
     Domain[Domain Layer / Entities & Types]
 
@@ -29,18 +29,15 @@ graph TD
 ### 1. Domain Layer (`src/domain`)
 The domain layer holds the core business entities, types, and validation rules. It has no external dependencies and represents the business models of the application.
 * **Key Files**:
-  * [Article.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Article.ts): Defines `Article`, `ArticleMetadata`, and `Post` types.
-  * [Job.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Job.ts), [Education.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Education.ts), [PersonalInfo.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/PersonalInfo.ts), [Project.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Project.ts): Core CV-related domain types.
+  * [Job.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Job.ts), [Education.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Education.ts), [PersonalInfo.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/PersonalInfo.ts), [Project.ts](file:///Users/mstefanutti/workspace/mstefa/src/domain/Project.ts): Core CV and portfolio domain types.
 
 ### 2. Application Layer (`src/application`)
-The application layer contains the business use cases. It orchestrates the domain models and coordinates with infrastructure gateways or repositories to satisfy use case requests.
-* **Key Files**:
-  * [article.service.ts](file:///Users/mstefanutti/workspace/mstefa/src/application/article.service.ts): Formats raw metadata using helper tools (such as `dayjs` and `reading-time`) and fetches articles via the repository.
+The application layer contains the business use cases and service orchestration. It coordinates domain models and repositories to satisfy presentation requirements.
 
 ### 3. Infrastructure Layer (`src/infrastructure`)
-The infrastructure layer implements technical details such as loading data from the filesystem or external services. It fulfills interfaces defined or consumed by the application layer.
+The infrastructure layer implements technical details such as loading data from the filesystem or external services. It fulfills data access interfaces consumed by presentation and application layers.
 * **Key Files**:
-  * [mdx-file-repository.ts](file:///Users/mstefanutti/workspace/mstefa/src/infrastructure/file-managment/mdx-file-repository.ts): Uses Node's `fs` module and `glob` to locate and parse `.mdx` files from the filesystem.
+  * [JobRepository.ts](file:///Users/mstefanutti/workspace/mstefa/src/infrastructure/JobRepository.ts), [EducationRepository.ts](file:///Users/mstefanutti/workspace/mstefa/src/infrastructure/EducationRepository.ts), [PersonaInfoRepository.ts](file:///Users/mstefanutti/workspace/mstefa/src/infrastructure/PersonaInfoRepository.ts), [ProjectRepository.ts](file:///Users/mstefanutti/workspace/mstefa/src/infrastructure/ProjectRepository.ts): Load CV and project data from local JSON data files.
 
 ### 4. Presentation Layer (`src/app` & `src/components`)
 The presentation layer is composed of Next.js App Router components and React UI components. It is responsible for handling user interactions, routing, page layouts, and rendering content.

@@ -70,7 +70,6 @@ export default function NavBar() {
             {" "}
             <Link href="/#contact">Contact</Link>
           </li>
-          <li> {/* <Link href="/blog">Blog</Link> */}</li>
         </ul>
       </div>
 
