@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - Added changelog update requirement prior to commits in `agents.md`.
 - Initialized `CHANGELOG.md`.
+- Added agent skill configuration and lockfile (`.agents/`, `skills-lock.json`).
+
 
 ### Changed
 - **Testing Configuration**:
