@@ -55,8 +55,11 @@ pnpm test
 ## Source Control Constraints
 
 * **Commit Rules**: Never commit autonomously. Always obtain explicit user confirmation before staging (`git add`) or committing (`git commit`).
+* **Changelog Updates**: Whenever requested to commit changes, document the changes in the changelog (`CHANGELOG.md`) first. The item or items must be added to the changelog before committing.
 * **Double-Check Protocol**: Even when requested to commit, always perform a final review first:
-  1. Run `git status`.
-  2. Show `git diff HEAD` (or cached changes).
-  3. Propose the commit message for final approval.
+  1. Ensure the changelog (`CHANGELOG.md`) is updated with the changes made.
+  2. Run `git status`.
+  3. Show `git diff HEAD` (or cached changes).
+  4. Propose the commit message for final approval.
 * **Push Rules**: Ask for explicit confirmation before pushing changes to the remote repository.
+

@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Added changelog update requirement prior to commits in `agents.md`.
+- Initialized `CHANGELOG.md`.
+
+### Changed
+- **Testing Configuration**:
+  - Configured `passWithNoTests: true` in `vitest.config.ts` to allow the test suite to pass cleanly without failing when zero test suites remain.
+- **Documentation**:
+  - Updated `docs/architecture.md` to align with the Clean Architecture layers for the portfolio and CV without blog references.
+  - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
+  - Completed and checked off all checklist items in `docs/todo/01-remove-blog-functionality.md`.
+
 ### Removed
 - **Presentation Routes**:
   - Removed Next.js App Router blog pages and layout (`src/app/blog/page.tsx`, `src/app/blog/layout.tsx`, `src/app/blog/page.module.scss`).
@@ -24,11 +36,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Removed article application service and its unit tests (`src/application/article.service.ts`, `src/application/article.service.test.ts`).
 - **Infrastructure Layer**:
   - Removed MDX file repository adapter and its unit tests (`src/infrastructure/file-managment/mdx-file-repository.ts`, `src/infrastructure/file-managment/mdx-file-repository.test.ts`).
-
-### Changed
-- **Testing Configuration**:
-  - Configured `passWithNoTests: true` in `vitest.config.ts` to allow the test suite to pass cleanly without failing when zero test suites remain.
-- **Documentation**:
-  - Updated `docs/architecture.md` to align with the Clean Architecture layers for the portfolio and CV without blog references.
-  - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
-  - Completed and checked off all checklist items in `docs/todo/01-remove-blog-functionality.md`.
