@@ -19,10 +19,9 @@ The project is structured according to **Clean Architecture** patterns:
 
 * **`src/domain/`**: Pure domain entities and TypeScript types. No dependencies on frameworks or libraries.
 * **`src/application/`**: Services implementing business logic and use cases.
-* **`src/infrastructure/`**: Implementation of adapters (such as reading MDX files from the filesystem).
+* **`src/infrastructure/`**: Implementation of adapters (such as reading JSON data from the filesystem).
 * **`src/app/`**: Next.js App Router presentation layer. Note: dynamic routing parameters (`params`) are asynchronous in Next.js 15+ and must be awaited.
 * **`src/components/`**: Decoupled React UI components.
-* **`data/articles/`**: Contains the source `.mdx` articles rendered in the blog section.
 * **`docs/`**: Holds architecture guidelines, documentation, and implementation plans.
 
 ---
