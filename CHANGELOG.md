@@ -19,8 +19,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Updated `docs/architecture.md` to align with the Clean Architecture layers for the portfolio and CV without blog references.
   - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
   - Completed and checked off all checklist items in `docs/todo/01-remove-blog-functionality.md`.
+  - Completed and checked off all checklist items in `docs/todo/02-remove-dead-legacy-files.md`.
 
 ### Removed
+- **Legacy Prototype & Template Files**:
+  - Removed obsolete standalone test HTML mockup (`test.html`).
+  - Removed leftover Create-React-App HTML template (`public/index.html`).
+  - Removed empty placeholder skills data file (`data/skils.json`).
+  - Removed commented-out icon button component and its stylesheet (`src/components/icon/InconButton.tsx`, `src/components/icon/iconButton.module.scss`).
+  - Removed orphaned duplicate LinkedIn SVG asset (`src/components/socialmedia/linkedin.svg`).
+  - Removed unused Next.js MDX configuration adapter (`mdx-components.tsx`).
 - **Presentation Routes**:
   - Removed Next.js App Router blog pages and layout (`src/app/blog/page.tsx`, `src/app/blog/layout.tsx`, `src/app/blog/page.module.scss`).
   - Removed dynamic article routes and MDX client renderer (`src/app/blog/[slug]/page.tsx`, `src/app/blog/[slug]/MdxContent.tsx`, `src/app/blog/[slug]/slug.module.scss`).
