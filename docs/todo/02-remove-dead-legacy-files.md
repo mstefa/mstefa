@@ -4,12 +4,12 @@
 
 **Blocked by:** None (can start immediately)
 
-**Status:** ready-for-agent
+**Status:** completed
 
-- [ ] Legacy standalone test HTML mockup in the project root is deleted
-- [ ] Obsolete Create-React-App HTML template in the public directory is deleted
-- [ ] Empty placeholder skills data file is removed from git tracking
-- [ ] Commented-out icon button component and its accompanying stylesheet are deleted
-- [ ] Orphaned duplicate LinkedIn SVG in the components tree is deleted
-- [ ] Unused Next.js MDX configuration adapter is deleted
-- [ ] Application builds and lints cleanly
+- [x] Legacy standalone test HTML mockup in the project root is deleted
+- [x] Obsolete Create-React-App HTML template in the public directory is deleted
+- [x] Empty placeholder skills data file is removed from git tracking
+- [x] Commented-out icon button component and its accompanying stylesheet are deleted
+- [x] Orphaned duplicate LinkedIn SVG in the components tree is deleted
+- [x] Unused Next.js MDX configuration adapter is deleted
+- [x] Application builds and lints cleanly
