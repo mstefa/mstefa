@@ -13,6 +13,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 
 ### Changed
+- **Dependencies & Build Tooling**:
+  - Moved `eslint` and `eslint-config-next` from `dependencies` to `devDependencies` in `package.json`.
+  - Cleaned `next.config.js` by removing obsolete experimental `mdxRs` flag and commented-out loader wrappers.
+  - Regenerated lockfile (`pnpm-lock.yaml`), pruning 233 unused packages.
 - **Testing Configuration**:
   - Configured `passWithNoTests: true` in `vitest.config.ts` to allow the test suite to pass cleanly without failing when zero test suites remain.
 - **Documentation**:
@@ -20,8 +24,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
   - Completed and checked off all checklist items in `docs/todo/01-remove-blog-functionality.md`.
   - Completed and checked off all checklist items in `docs/todo/02-remove-dead-legacy-files.md`.
+  - Completed and checked off all checklist items in `docs/todo/03-prune-dependencies-and-clean-config.md`.
 
 ### Removed
+- **Blog & MDX Dependencies**:
+  - Removed blog-specific runtime dependencies: `next-mdx-remote`, `@mdx-js/loader`, `@mdx-js/react`, `@next/mdx`, `dayjs`, `glob`, `reading-time`, `rehype-autolink-headings`, `rehype-code-titles`, `rehype-highlight`, and `rehype-slug`.
+  - Removed MDX types package: `@types/mdx`.
+- **ESLint Compatibility Packages**:
+  - Removed obsolete ESLint compatibility wrappers: `@eslint/eslintrc` and `@eslint/js`.
 - **Legacy Prototype & Template Files**:
   - Removed obsolete standalone test HTML mockup (`test.html`).
   - Removed leftover Create-React-App HTML template (`public/index.html`).

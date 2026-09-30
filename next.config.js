@@ -3,9 +3,6 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true }, // not compatible with output: export
   assetPrefix: ".",
-  experimental: {
-    mdxRs: true,
-  },
   turbopack: {
     rules: {
       '*.svg': {
@@ -24,8 +21,6 @@ const nextConfig = {
   }
 }
 
-// const withMDX = require('@next/mdx')()
-// module.exports = withMDX(nextConfig)
 module.exports = nextConfig
 
 
