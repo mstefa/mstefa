@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./about.module.scss";
-import { Icon } from "../icon/Icon";
 import { SectionTitle } from "../atoms/section-title/SectionTitle";
 
 export default function About() {

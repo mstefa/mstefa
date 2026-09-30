@@ -19,14 +19,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - Regenerated lockfile (`pnpm-lock.yaml`), pruning 233 unused packages.
 - **Testing Configuration**:
   - Configured `passWithNoTests: true` in `vitest.config.ts` to allow the test suite to pass cleanly without failing when zero test suites remain.
+- **Assets & Icons**:
+  - Pruned icon barrel (`src/resources/icons.tsx`) to import and export only the 8 active icons (`chevronDown`, `email`, `github`, `link`, `linkedin`, `menu`, `paperPlane`, `twitter`).
+  - Narrowed `Icons` TypeScript type in `src/components/icon/Icon.tsx` to active icon keys.
 - **Documentation**:
   - Updated `docs/architecture.md` to align with the Clean Architecture layers for the portfolio and CV without blog references.
   - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
   - Completed and checked off all checklist items in `docs/todo/01-remove-blog-functionality.md`.
   - Completed and checked off all checklist items in `docs/todo/02-remove-dead-legacy-files.md`.
   - Completed and checked off all checklist items in `docs/todo/03-prune-dependencies-and-clean-config.md`.
+  - Completed and checked off all checklist items in `docs/todo/04-prune-unused-svg-assets.md`.
 
 ### Removed
+- **Unused SVG Assets & Imports**:
+  - Removed 13 unreferenced SVG assets from `src/resources/`: `arrow-left.svg`, `arrow-right.svg`, `check.svg`, `chevron-right.svg`, `chevron-up.svg`, `close.svg`, `codely.svg`, `facebook.svg`, `info.svg`, `instagram.svg`, `play.svg`, `tiktok.svg`, and `twitch.svg`.
+  - Removed unused `Icon` import from `src/components/about/About.tsx`.
 - **Blog & MDX Dependencies**:
   - Removed blog-specific runtime dependencies: `next-mdx-remote`, `@mdx-js/loader`, `@mdx-js/react`, `@next/mdx`, `dayjs`, `glob`, `reading-time`, `rehype-autolink-headings`, `rehype-code-titles`, `rehype-highlight`, and `rehype-slug`.
   - Removed MDX types package: `@types/mdx`.
