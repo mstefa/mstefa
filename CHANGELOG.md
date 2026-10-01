@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Assets & Icons**:
   - Pruned icon barrel (`src/resources/icons.tsx`) to import and export only the 8 active icons (`chevronDown`, `email`, `github`, `link`, `linkedin`, `menu`, `paperPlane`, `twitter`).
   - Narrowed `Icons` TypeScript type in `src/components/icon/Icon.tsx` to active icon keys.
+  - Normalized Twitter/X icon (`src/resources/twitter.svg`) to standard 24x24 `viewBox` with `fill="currentColor"`, matching margins and sleek brand proportions.
 - **Documentation**:
   - Updated `docs/architecture.md` to align with the Clean Architecture layers for the portfolio and CV without blog references.
   - Updated `agents.md` directory structure to remove `data/articles/` and references to filesystem MDX reading.
