@@ -13,6 +13,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 
 ### Changed
+- **Security & Vulnerability Fixes**:
+  - Configured dependency overrides in `pnpm-workspace.yaml` to remediate 10 security advisories reported in GitHub Dependabot and `pnpm audit`:
+    - Updated `sharp` to `0.35.5` to fix CVE-2026-96889 in bundled `librsvg` (GHSA-wq5f-xc86-pv6w, Dependabot #164).
+    - Updated `brace-expansion@^5` to `5.0.12` to fix 6 denial-of-service vulnerabilities (GHSA-3jxr-9vmj-r5cp, GHSA-q2hr-2g5m-vwhr, GHSA-mh99-v99m-4gvg, GHSA-rgw5-rvv9-x895, GHSA-6j4f-fj2g-mc7p, GHSA-qhr7-859c-m2p7, Dependabot #106 and #160).
+    - Updated `@babel/core` to `>=7.29.7` to address arbitrary file read vulnerability via `sourceMappingURL` comments (GHSA-4x5r-pxfx-6jf8, Dependabot #104).
+    - Updated `yaml` to `>=2.8.3` to fix stack overflow vulnerability in nested collections (GHSA-48c2-rrv3-qjmp).
+    - Updated `@eslint/plugin-kit` to `>=0.3.4` to fix regular expression denial of service in `ConfigCommentParser` (GHSA-xffm-g5w8-qvg7).
+  - Updated `pnpm-lock.yaml` with patched resolutions.
 - **Dependencies & Build Tooling**:
   - Moved `eslint` and `eslint-config-next` from `dependencies` to `devDependencies` in `package.json`.
   - Cleaned `next.config.js` by removing obsolete experimental `mdxRs` flag and commented-out loader wrappers.
