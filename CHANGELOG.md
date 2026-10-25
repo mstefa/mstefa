@@ -14,7 +14,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - **Security & Vulnerability Fixes**:
-  - Configured dependency overrides in `pnpm-workspace.yaml` to remediate 10 security advisories reported in GitHub Dependabot and `pnpm audit`:
+  - Configured dependency overrides in `pnpm-workspace.yaml` to remediate security advisories reported in GitHub Dependabot and `pnpm audit`:
+    - Updated `vite` to `>=8.3.5` (resolved to `8.3.5`, matching Dependabot PR #97) to fix 5 advisories in `vite` and `launch-editor` (GHSA-587h-7wmj-h5pm / Dependabot #166, GHSA-698v-4r3x-3vcv / Dependabot #165, GHSA-r825-w8mm-5pxw / Dependabot #167, GHSA-rq7h-c2jc-7f22, GHSA-9jrq-w75r-8gcw).
+    - Updated `zod` to `>=4.6.6` (resolved to `4.6.7`) to fix memory exhaustion vulnerability when validating oversized constrained collections (GHSA-mrhx-c7xc-m3w5).
     - Updated `sharp` to `0.35.5` to fix CVE-2026-96889 in bundled `librsvg` (GHSA-wq5f-xc86-pv6w, Dependabot #164).
     - Updated `brace-expansion@^5` to `5.0.12` to fix 6 denial-of-service vulnerabilities (GHSA-3jxr-9vmj-r5cp, GHSA-q2hr-2g5m-vwhr, GHSA-mh99-v99m-4gvg, GHSA-rgw5-rvv9-x895, GHSA-6j4f-fj2g-mc7p, GHSA-qhr7-859c-m2p7, Dependabot #106 and #160).
     - Updated `@babel/core` to `>=7.29.7` to address arbitrary file read vulnerability via `sourceMappingURL` comments (GHSA-4x5r-pxfx-6jf8, Dependabot #104).
