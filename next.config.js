@@ -2,7 +2,6 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true }, // not compatible with output: export
-  assetPrefix: ".",
   turbopack: {
     rules: {
       '*.svg': {

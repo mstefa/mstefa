@@ -1,19 +1,21 @@
 export const metadata = {
-  title: 'mstefa',
-  description: 'Matias Stefanutti personal web site',
-}
+  title: "Matías Stefanutti | Senior Software Engineer — AI Agents & Process Automation",
+  description:
+    "Matías Stefanutti — Senior Software Engineer specializing in scalable backend architectures, MCP servers, AI agents, and process automation.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-      <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <link rel="shortcut icon" href="./favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
-  )
+  );
 }

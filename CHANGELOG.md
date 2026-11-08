@@ -7,12 +7,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Created interactive `LogoHexM` SVG isotype component (`src/components/logo/LogoHexM.tsx`, `src/components/logo/logoHexM.module.scss`) featuring an open-base hexagon, 3 internal vertical bars forming an "M", and an afterburner hover animation (`thrustPulse` / `corePulse`).
+- Added SVG favicon (`public/favicon.svg`) with the new Hexagon M mark.
 - Added changelog update requirement prior to commits in `agents.md`.
 - Initialized `CHANGELOG.md`.
 - Added agent skill configuration and lockfile (`.agents/`, `skills-lock.json`).
 
 
 ### Changed
+- **Avionics & Copper Redesign (`Look & Feel`)**:
+  - Updated global CSS custom properties in `src/app/globals.css` to the `Avionics & Copper` color palette (`#121316` background, `#1C1E24` surface, `#F3F4F6` primary text, `#9CA3AF` secondary text, `#E07A5F` aeronautical copper primary accent, and `#F2CC8F` technical amber secondary accent).
+  - Updated Hero section (`src/components/presentation/Presentation.tsx`, `src/components/presentation/presentation.module.scss`) with the new professional title (`"Senior Software Engineer — AI Agents & Process Automation"`), copper/amber visual hierarchy, and updated lead statement highlighting scalable backend architecture, MCP servers, and process automation.
+  - Updated `data/personalData.json` and `src/app/layout.tsx` metadata with the new role title and description, plus `suppressHydrationWarning` on root document tags.
+  - Replaced airplane icon across `NavBar`, `SectionTitle`, and `src/resources/paper-plane.svg` with the new Hexagon M isotype.
+  - Harmonized section styles across `About`, `Jobs`, `MainProject`, `Contact`, `SocialMedia`, `NavBar`, and `Footer` to use the `Avionics & Copper` surface and accent tokens.
+- **Jobs Tab Selector & Hydration Fixes**:
+  - Removed `assetPrefix: "."` from `next.config.js` and aligned `"dev"` script in `package.json` (`next dev --webpack`) so client hydration chunks load reliably in both dev and static export builds.
+  - Hardened `Jobs` tab selector (`src/components/jobs/Jobs.tsx`, `src/components/jobs/jobs.module.scss`) with inline `--activeTabId` CSS custom properties, explicit hidden panel classes (`.tabPanelHidden`), `pointer-events: none` on `.highlight`, and safe handling for empty `companyWebSite` links.
+  - Fixed HTML phrasing/nesting in `Icon.tsx` (`<span>` wrapper), `SocialMedia.tsx` (`<li>` wrapper for email link), and `About.tsx` (styled `<a>` button).
 - **Security & Vulnerability Fixes**:
   - Configured dependency overrides in `pnpm-workspace.yaml` to remediate security advisories reported in GitHub Dependabot and `pnpm audit`:
     - Updated `vite` to `>=8.3.5` (resolved to `8.3.5`, matching Dependabot PR #97) to fix 5 advisories in `vite` and `launch-editor` (GHSA-587h-7wmj-h5pm / Dependabot #166, GHSA-698v-4r3x-3vcv / Dependabot #165, GHSA-r825-w8mm-5pxw / Dependabot #167, GHSA-rq7h-c2jc-7f22, GHSA-9jrq-w75r-8gcw).

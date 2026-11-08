@@ -1,80 +1,135 @@
 .container {
-  padding: 6rem 0rem 10rem 0rem;
+  padding: 7rem 0rem 6rem 0rem;
   margin: 0rem auto;
   max-width: var(--maxWidth);
-
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
 
   @keyframes slideInX {
     from {
-      transform: translate(1rem);
-      opacity: 10%;
+      transform: translateY(0.75rem);
+      opacity: 0;
     }
 
     to {
-      transform: translate(0px);
-      opacity: 100%;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
-  h1 {
-    font-size: var(--fzheading);
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2rem;
+  }
+
+  .name {
+    font-size: clamp(2.75rem, 6.5vw, 5.25rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.08;
     color: var(--fg-default);
-    margin: 0.5rem 0 0 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    animation-duration: var(--animationTime);
-    animation-name: slideInX;
+    margin: 0 0 1.25rem 0;
+    animation: slideInX 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
-  h3 {
-    font-size: 3rem;
-    color: var(--fg-accent2);
-    margin: 0 0 1rem 0;
-    animation-duration: var(--animationTime);
-    animation-name: slideInX;
+  .role {
+    font-size: clamp(1.35rem, 2.6vw, 2.25rem);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    color: var(--accent-primary);
+    margin: 0 0 1.75rem 0;
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--accent-primary);
+    animation: slideInX 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
 
+    .rolePrimary {
+      color: var(--accent-primary);
+      font-weight: 600;
+    }
+
+    .roleDivider {
+      color: var(--fg-secondary);
+      font-weight: 400;
+    }
+
+    .roleSpecialty {
+      color: var(--accent-secondary);
+      font-weight: 500;
+    }
   }
 
+  .lead {
+    font-size: clamp(1.05rem, 1.35vw, 1.22rem);
+    line-height: 1.7;
+    color: var(--fg-secondary);
+    max-width: 44rem;
+    margin: 0;
+    animation: slideInX 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 
+    strong {
+      color: var(--fg-default);
+      font-weight: 500;
+    }
+  }
 
   @media (max-width: 850px) {
+    padding: 6rem 0.5rem 5rem 0.5rem;
 
-    padding: 5rem 0rem 8rem 1rem;
-
-    h1 {
-      font-size: 4rem;
+    .name {
+      font-size: clamp(2.35rem, 9vw, 3.5rem);
     }
 
-    h3 {
-      font-size: 2.5rem;
+    .role {
+      font-size: clamp(1.2rem, 4.5vw, 1.65rem);
+      padding-left: 0.75rem;
     }
 
+    .lead {
+      font-size: 1rem;
+      line-height: 1.65;
+    }
   }
 
   @media (max-width: 450px) {
+    padding: 5.5rem 0.25rem 4rem 0.25rem;
 
-    padding: 5rem 0rem 8rem 0rem;
+    .role {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
 
+      .roleDivider {
+        display: none;
+      }
+    }
   }
 }
 
 .arrow {
-
-
-  margin: auto;
-  top: 90%;
+  margin: 0 auto 1.5rem auto;
+  color: var(--fg-secondary);
   animation: var(--animationTime) infinite alternate bounce;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: var(--accent-primary);
+  }
 }
 
 @keyframes bounce {
   from {
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
 
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
