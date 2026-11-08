@@ -1,15 +1,16 @@
-// @import "transparentize"
-
 .navBar {
   position: fixed;
   width: 100%;
   top: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  z-index: 1;
-
-  background-color: color-mix(in srgb, var(--bg-default) 90%, transparent);
-  transition: top 0.5s;
+  z-index: 10;
+  padding: 0.35rem 0;
+  background-color: color-mix(in srgb, var(--bg-default) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: top 0.5s ease;
 
   @keyframes fade {
     from {
@@ -23,47 +24,55 @@
 
   .logoDiv {
     display: flex;
-    align-content: flex-end;
-
+    align-items: center;
   }
 
   a {
-    margin: 0.5rem 0 0.5rem 2rem;
+    margin: 0.35rem 0 0.35rem 2rem;
+    display: inline-flex;
+    align-items: center;
     animation-duration: var(--animationTime);
     animation-name: fade;
   }
 
   ul {
     display: flex;
+    align-items: center;
     padding: 0;
     list-style-type: none;
-    margin-right: 2rem;
-    font-size: 1.1rem;
+    margin: 0 2.5rem 0 0;
+    font-size: 1rem;
+    font-weight: 500;
 
     li {
       margin-left: 2rem;
       padding: 0 0.1rem;
       animation-duration: var(--animationTime);
       animation-name: fade;
+      color: var(--fg-default);
 
-      a:hover {
-        color: var(--lightTel);
-        transition: all 500ms ease;
+      a {
+        margin: 0;
+        transition: color 0.25s ease;
       }
 
-      ::before {
-        content: '> ';
-        color: var(--lightTel);
-        padding: 0 0.5rem;
+      a:hover {
+        color: var(--accent-primary);
+      }
+
+      &::before {
+        content: "> ";
+        color: var(--accent-primary);
+        padding: 0 0.35rem;
+        font-weight: 600;
       }
     }
   }
 
-
   &Hidden {
     @extend .navBar;
     top: -5rem;
-    transition: top 1s;
+    transition: top 0.6s ease;
   }
 }
 
@@ -73,78 +82,68 @@
   width: 40px;
   padding: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: color 0.25s ease, background-color 0.2s ease-in-out;
   position: absolute;
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
   display: none;
-  background-color: var(--bg-default);
-  color: var(--fg-default)
+  background-color: transparent;
+  color: var(--fg-default);
 }
 
+.navigationMenu {
+  display: flex;
+  align-items: center;
+}
 
 .navigationMenuHiden {
   @extend .navigationMenu;
 
-  // display: none;
-  @media(max-width: 850px) {
+  @media (max-width: 850px) {
     opacity: 0;
-    transition: opacity 0.5s ease;
-
+    pointer-events: none;
+    transition: opacity 0.35s ease;
   }
 }
 
 .navigationMenuExpanded {
   @extend .navigationMenu;
-
 }
 
-@media(max-width: 850px) {
-
+@media (max-width: 850px) {
   .navigationMenu {
-    background-color: color-mix(in srgb, var(--bg-default) 90%, transparent);
+    background-color: color-mix(in srgb, var(--bg-surface) 95%, transparent);
     width: 65%;
     max-width: 20rem;
 
     ul {
       position: absolute;
-      top: 30px;
+      top: 52px;
+      right: 1rem;
       flex-direction: column;
+      align-items: flex-start;
       max-width: 20rem;
-      background-color: color-mix(in srgb, var(--bg-default) 90%, transparent);
+      padding: 1rem 1.5rem;
+      margin: 0;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(224, 122, 95, 0.2);
+      background-color: color-mix(in srgb, var(--bg-surface) 96%, transparent);
       font-size: var(--fzmd);
 
       li {
-        margin: 0.5rem 2rem 0.5rem 0rem;
+        margin: 0.6rem 0;
       }
     }
-
-
   }
 
   .hamburger {
-    display: inline;
-  }
-
-  // .navigationMenu ul {
-  //   position: absolute;
-  //   top: 30px;
-  //   flex-direction: column;
-  //   max-width: 20rem;
-  //   background-color: color-mix(in srgb, var(--bg-default) 90%, transparent);
-  //   font-size: var(--fzmd);
-
-  // }
-
-  .navigationMenu li {
-    font-size: var(--fzmd);
-    margin: 1rem 0rem 1rem 0rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .hamburger:hover {
-  color: var(--fg-accent1);
-  transition: all 500ms ease;
-
+  color: var(--accent-primary);
 }

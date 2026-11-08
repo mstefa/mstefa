@@ -1,14 +1,27 @@
 .sectionTitle {
   color: var(--fg-default);
   display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 
-  div {
-    color: var(--fg-accent1);
+  &::after {
+    content: "";
+    flex: 1;
+    max-width: 18rem;
+    height: 1px;
+    margin-left: 0.75rem;
+    background: linear-gradient(
+      90deg,
+      rgba(224, 122, 95, 0.45) 0%,
+      rgba(156, 163, 175, 0.1) 100%
+    );
   }
 
   @media (max-width: 850px) {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     color: var(--fg-default);
-    display: flex
+    display: flex;
   }
 }
