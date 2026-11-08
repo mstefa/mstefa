@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Frontend Testing Suite (Vitest + React Testing Library + Playwright)**:
+  - Configured Vitest with `jsdom`, `@vitejs/plugin-react`, and `@testing-library/jest-dom` (`vitest.config.ts`, `src/test/setup.tsx`).
+  - Added unit and component tests for infrastructure repositories (`src/infrastructure/__tests__/repositories.test.ts`), the `"Where I’ve Worked"` jobs selector (`src/components/jobs/__tests__/Jobs.test.tsx`), navigation bar (`src/components/navBar/__tests__/NavBar.test.tsx`), projects (`src/components/projects/__tests__/Projects.test.tsx`), and CV page (`src/app/cv/__tests__/page.test.tsx`).
+  - Configured Playwright E2E test runner (`playwright.config.ts`) and added end-to-end tests for the `"Where I’ve Worked"` job selector (`e2e/jobs-selector.spec.ts`) and frontend smoke tests (`e2e/smoke.spec.ts`).
+  - Added GitHub Actions CI workflow (`.github/workflows/ci.yml`) to run ESLint, Vitest unit/component tests, Playwright E2E tests, and build verification on pull requests and pushes to `main`, plus unit test execution in `.github/workflows/nextjs.yml`.
 - Added changelog update requirement prior to commits in `agents.md`.
 - Initialized `CHANGELOG.md`.
 - Added agent skill configuration and lockfile (`.agents/`, `skills-lock.json`).

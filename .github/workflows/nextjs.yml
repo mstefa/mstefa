@@ -83,6 +83,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml', '**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Run unit and component tests
+        run: ${{ steps.detect-package-manager.outputs.runner }} test
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build --webpack # TODO remove --webpack when fixed in nextjs
       - name: Upload artifact
