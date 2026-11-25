@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import styles from "./navBar.module.scss";
-import Image from "next/image";
 import { Icon } from "../icon/Icon";
+import { LogoHexM } from "../logo/LogoHexM";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -13,7 +13,7 @@ export default function NavBar() {
     let prevScrollpos = window.scrollY;
 
     const hideAndShowNavBar = () => {
-      let currentScrollPos = window.scrollY;
+      const currentScrollPos = window.scrollY;
       if (prevScrollpos > currentScrollPos) {
         setHideNavBar(false);
       } else {
@@ -24,24 +24,14 @@ export default function NavBar() {
     };
 
     window.addEventListener("scroll", hideAndShowNavBar, true);
-    return window.removeEventListener("scroll", hideAndShowNavBar);
+    return () => window.removeEventListener("scroll", hideAndShowNavBar, true);
   }, []);
 
   return (
     <nav className={hideNavBar ? styles.navBarHidden : styles.navBar}>
       <div className={styles.logoDiv}>
-        {/* <a href='#home'> 
-        <Image className={ styles.logo}id="logo" width="40" height="35" alt="Matias Stefanutti" src='./images/Icon2Small.png' />
-      </a> */}
-        <Link href="/">
-          <Image
-            className={styles.logo}
-            id="logo"
-            width="40"
-            height="35"
-            alt="Matias Stefanutti"
-            src="./images/Icon2Small.png"
-          />
+        <Link href="/" aria-label="Matías Stefanutti Home">
+          <LogoHexM size={44} className={styles.logo} />
         </Link>
       </div>
 
@@ -53,21 +43,16 @@ export default function NavBar() {
         }
       >
         <ul>
-          {/* <li> Home </li> */}
           <li>
-            {" "}
-            <Link href="/#about">About me</Link>{" "}
+            <Link href="/#about">About me</Link>
           </li>
           <li>
-            {" "}
-            <Link href="/#jobs">Work</Link>{" "}
+            <Link href="/#jobs">Work</Link>
           </li>
           <li>
-            {" "}
-            <Link href="/#projects">Projects</Link>{" "}
+            <Link href="/#projects">Projects</Link>
           </li>
           <li>
-            {" "}
             <Link href="/#contact">Contact</Link>
           </li>
         </ul>
@@ -75,6 +60,7 @@ export default function NavBar() {
 
       <button
         className={styles.hamburger}
+        aria-label="Toggle navigation menu"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}

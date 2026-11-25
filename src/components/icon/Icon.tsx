@@ -12,11 +12,10 @@ export interface IconProps {
   size?: "small" | "medium" | "large" | "xl";
 }
 
-export const Icon = ({ size = "small", icon,}: IconProps) => {
-  // TODO: check size not working
+export const Icon = ({ size = "small", icon }: IconProps) => {
   return (
-    <div className={styles[`customIcon--${size}`]}>
+    <span className={styles[`customIcon--${size}`]}>
       {icons[icon]()}
-    </div>
+    </span>
   );
 };

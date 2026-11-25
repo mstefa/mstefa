@@ -1,0 +1,63 @@
+.logoHexM {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 8px rgba(224, 122, 95, 0.35));
+
+    .svgThrustPrimary {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: thrustPulse 1s ease-in-out infinite;
+    }
+
+    .svgThrustSecondary {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: thrustPulse 1s ease-in-out infinite 0.1s;
+    }
+
+    .svgBarMid {
+      transform-box: fill-box;
+      transform-origin: center center;
+      animation: corePulse 1s ease-in-out infinite;
+    }
+  }
+}
+
+.svgThrustPrimary,
+.svgThrustSecondary,
+.svgBarMid {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+@keyframes thrustPulse {
+  0%,
+  100% {
+    transform: scaleY(0.85);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleY(1.22) translateY(2px);
+    opacity: 1;
+  }
+}
+
+@keyframes corePulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.14);
+  }
+}

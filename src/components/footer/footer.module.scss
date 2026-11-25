@@ -1,15 +1,23 @@
-.footer{
-  /* margin: 0 auto; */
-  font-size: 0.8rem;
-  text-align:center;
+.footer {
+  font-size: 0.85rem;
+  text-align: center;
   vertical-align: middle;
   min-height: 3rem;
-  margin-bottom: 0.5rem;
-  p{
+  margin-bottom: 1rem;
+  color: var(--fg-secondary);
+
+  p {
     font-size: 0.9rem;
+    color: var(--fg-default);
+    margin-bottom: 0.25rem;
   }
-  a:hover {
-    color: var(--lightTel);
-    transition: all 500ms ease;
+
+  a {
+    color: var(--accent-primary);
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: var(--accent-secondary);
+    }
   }
 }

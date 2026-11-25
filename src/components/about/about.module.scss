@@ -1,5 +1,4 @@
 .aboutSection {
-
   min-height: 25rem;
   margin: 1rem auto;
   text-align: left;
@@ -33,16 +32,26 @@
 
       p {
         font-size: var(--fzsm);
-        margin: 0.5rem 0 0.5rem 0;
-        line-height: 140%;
+        margin: 0.6rem 0;
+        line-height: 1.6;
+        color: var(--fg-secondary);
+
+        b,
+        strong {
+          color: var(--fg-default);
+          font-weight: 600;
+        }
       }
 
       a {
-        color: var(--lightTel)
+        color: var(--accent-primary);
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: var(--accent-secondary);
+        }
       }
     }
-
-
   }
 
   .imgContainer {
@@ -50,28 +59,31 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-content: center;
 
     img {
       width: 19rem;
       height: 19rem;
+      object-fit: cover;
       border-radius: 0.5rem;
-      box-shadow: 5px 5px var(--bg-muted);
+      border: 1px solid rgba(224, 122, 95, 0.28);
+      box-shadow: 6px 6px 0px var(--bg-surface);
     }
 
-    button {
-      margin: 1rem auto;
+    button,
+    :global(.mainButton) {
+      margin: 1.25rem auto;
     }
   }
 
-  @media(max-width: 850px) {
-
+  @media (max-width: 850px) {
     div {
       .textContainer {
         flex-basis: 100%;
         width: 100%;
         max-width: 100%;
-        margin: 0 0.5rem 0 0.5rem;
+        margin: 0 0.5rem;
         order: 2;
       }
 
@@ -79,13 +91,11 @@
         width: 100%;
         order: 1;
 
-        button {
+        button,
+        :global(.mainButton) {
           width: 100%;
         }
       }
-
-
     }
-
   }
 }

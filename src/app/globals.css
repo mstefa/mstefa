@@ -1,39 +1,42 @@
 :root {
+  /* Avionics & Copper Design System */
+  --bg-default: #121316;
+  --bg-surface: #1C1E24;
+  --fg-default: #F3F4F6;
+  --fg-secondary: #9CA3AF;
+  --accent-primary: #E07A5F;
+  --accent-secondary: #F2CC8F;
 
-  /* background */
-  --bg-default: #24292f;
-  --bg-muted: #57606a;
-  --bg-subtle: #6e7781;
-  --bg-onEmphasis: #1c2128;
+  /* Semantic & Legacy Aliases */
+  --bg-muted: #9CA3AF;
+  --bg-subtle: #9CA3AF;
+  --bg-onEmphasis: #1C1E24;
 
-  /* foreground */
-  --fg-accent1: #17CFC5;
-  --fg-accent2: #CF4740;
-  --fg-accent3: #41CF17;
-  --fg-default: #fafafa;
+  --fg-accent1: #E07A5F;
+  --fg-accent2: #E07A5F;
+  --fg-accent3: #F2CC8F;
 
-
-  /* TODO */
   --tabHeigth: 2.5rem;
   --tabHighlightWidth: 0.15rem;
   --tabWidth: 150px;
 
-  --mainRed: #820801;
-  --darkRed: #4F0501;
-  --ultraDarkRed: #2f0d0a;
-  --backgroundRed: #181119;
-  --backgroundRed30opacity: #111010ae;
-  --lightRed: #CF4740;
-  --lightTel: #17CFC5;
-  --darkTel: #06625C;
-  --lightGreen: #41CF17;
-  --darkGreen: #41CF17;
-  --lightGray: #F2F2F2;
-  --mediumGray: #888888;
-  --darkGray: #262626;
+  --mainRed: #E07A5F;
+  --darkRed: #1C1E24;
+  --ultraDarkRed: #121316;
+  --backgroundRed: #121316;
+  --backgroundRed30opacity: #121316ae;
+  --lightRed: #E07A5F;
+  --lightTel: #E07A5F;
+  --darkTel: #F2CC8F;
+  --lightGreen: #F2CC8F;
+  --darkGreen: #F2CC8F;
+  --lightGray: #F3F4F6;
+  --mediumGray: #9CA3AF;
+  --darkGray: #1C1E24;
+  --darkGray-rgb: 28, 30, 36;
 
   --maxWidth: 70rem;
-  --animationTime: 1.5s;
+  --animationTime: 1.2s;
 
   --fzxxs: 12px;
   --fzxs: 15px;
@@ -42,24 +45,22 @@
   --fzlg: 28px;
   --fzxl: 30px;
   --fzxxl: 32px;
-  --fzheading: 12vh;
+  --fzheading: clamp(2.75rem, 6.5vw, 5rem);
   --fztitle: 8vh;
 
   --max-width: 1100px;
   --border-radius: 12px;
 
-  --primary-glow: conic-gradient(from 180deg at 50% 50%,
-      #16abff33 0deg,
-      #0885ff33 55deg,
-      #54d6ff33 120deg,
-      #0071ff33 160deg,
-      transparent 360deg);
-  --secondary-glow: radial-gradient(var(--foreground-accent1),
-      var(--foreground-accent2));
+  --primary-glow: radial-gradient(
+    circle at 50% 50%,
+    rgba(224, 122, 95, 0.14) 0%,
+    rgba(242, 204, 143, 0.05) 45%,
+    transparent 70%
+  );
+  --secondary-glow: radial-gradient(var(--accent-primary), var(--accent-secondary));
 
-  color: var(--lightGray)
+  color: var(--fg-default);
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -69,12 +70,11 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-
-  /* TODO  optimize fonts*/
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg-default);
+  color: var(--fg-default);
 }
 
 a {
@@ -88,32 +88,59 @@ section {
 }
 
 .mainButton {
-
-  background-color: var(--bg-onEmphasis);
-  color: var(--lightTel);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--bg-surface);
+  color: var(--accent-primary);
   font-size: 1rem;
+  font-weight: 500;
   padding: 0.8rem 1.6rem;
-  border: 0.08rem solid var(--lightTel);
+  border: 0.08rem solid var(--accent-primary);
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.mainButton:hover {
+  background-color: color-mix(in srgb, var(--accent-primary) 14%, var(--bg-surface));
+  color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+/* CSS Propulsión (Se activa en hover sobre .logo-hex-m) */
+.logo-hex-m:hover .svg-thrust-primary {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: thrustPulse 1s ease-in-out infinite;
+}
+.logo-hex-m:hover .svg-bar-mid {
+  transform-box: fill-box;
+  transform-origin: center center;
+  animation: corePulse 1s ease-in-out infinite;
+}
+@keyframes thrustPulse {
+  0%, 100% { transform: scaleY(0.85); opacity: 0.7; }
+  50% { transform: scaleY(1.22) translateY(2px); opacity: 1; }
+}
+@keyframes corePulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.14); }
 }
 
 @media (max-width: 850px) {
-
   section {
     width: 90vw;
     margin: 1rem 5vw 0rem 5vw;
   }
 
   p {
-    /* TODO */
-    font-size: 0.9rem;
-
+    font-size: 0.95rem;
   }
 
   li {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
-
-
 }

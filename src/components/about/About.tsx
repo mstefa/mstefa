@@ -45,10 +45,13 @@ export default function About() {
           </p>
         </div>
         <div className={styles.imgContainer}>
-          <img src="./images/profilePic.webp" alt="profile"></img>
-          <a href="https://mstefanutti.com/cv" target="blank">
-            {" "}
-            <button className="mainButton">Resume</button>{" "}
+          <img src="./images/profilePic.webp" alt="profile" />
+          <a
+            href="https://mstefanutti.com/cv"
+            target="blank"
+            className="mainButton"
+          >
+            Resume
           </a>
         </div>
       </div>
